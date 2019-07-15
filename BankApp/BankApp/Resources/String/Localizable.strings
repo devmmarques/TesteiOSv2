@@ -1,0 +1,7 @@
+"teste" = "teste";
+"errorInternetDescription" = "Não foi possível carregar a página no momento";
+"errorUnexpectedDescription" = "Não foi possivel carregar a página no momento. Por favor, tente mais tarde.";
+"errorUnexpectedTitle" = "Erro inesperado";
+"errorInternetTitle" = "Sem conexão com internet";
+
+
