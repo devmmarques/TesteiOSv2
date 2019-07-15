@@ -32,6 +32,10 @@
 		B232D94322DCBCDF0052FB14 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94222DCBCDF0052FB14 /* Assets.swift */; };
 		B232D94522DCBCF90052FB14 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94422DCBCF90052FB14 /* Colors.swift */; };
 		B232D94722DCBD180052FB14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94622DCBD180052FB14 /* Strings.swift */; };
+		B232D94D22DCC3080052FB14 /* ReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94C22DCC3080052FB14 /* ReportService.swift */; };
+		B232D95022DCC33F0052FB14 /* StatementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94F22DCC33F0052FB14 /* StatementList.swift */; };
+		B232D95222DCC3810052FB14 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95122DCC3810052FB14 /* Receipt.swift */; };
+		B232D95422DCC4330052FB14 /* ReportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95322DCC4330052FB14 /* ReportRouter.swift */; };
 		FC19FAF9AE124357011F9B38 /* Pods_BankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +93,10 @@
 		B232D94222DCBCDF0052FB14 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		B232D94422DCBCF90052FB14 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B232D94622DCBD180052FB14 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		B232D94C22DCC3080052FB14 /* ReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportService.swift; sourceTree = "<group>"; };
+		B232D94F22DCC33F0052FB14 /* StatementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementList.swift; sourceTree = "<group>"; };
+		B232D95122DCC3810052FB14 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		B232D95322DCC4330052FB14 /* ReportRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRouter.swift; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +262,7 @@
 		B2033D4622DCB52300B79379 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B232D94E22DCC3320052FB14 /* Report */,
 				B2033D4722DCB55100B79379 /* UserAccount.swift */,
 			);
 			path = Model;
@@ -262,6 +271,7 @@
 		B2033D4922DCB5A900B79379 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B232D94B22DCC2FA0052FB14 /* Report */,
 				B2033D5A22DCB95700B79379 /* Util */,
 				B2033D4A22DCB5BD00B79379 /* ServiceClient */,
 			);
@@ -310,6 +320,24 @@
 				B2033D5E22DCBA1100B79379 /* Codable+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B232D94B22DCC2FA0052FB14 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				B232D94C22DCC3080052FB14 /* ReportService.swift */,
+				B232D95322DCC4330052FB14 /* ReportRouter.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		B232D94E22DCC3320052FB14 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				B232D94F22DCC33F0052FB14 /* StatementList.swift */,
+				B232D95122DCC3810052FB14 /* Receipt.swift */,
+			);
+			path = Report;
 			sourceTree = "<group>";
 		};
 		F38B29D97C867E3AA26DFF96 /* Pods */ = {
@@ -553,17 +581,21 @@
 				B2033D5522DCB68F00B79379 /* ServiceRouter.swift in Sources */,
 				B232D94122DCBCC10052FB14 /* Strings.swift in Sources */,
 				B232D94322DCBCDF0052FB14 /* Assets.swift in Sources */,
+				B232D94D22DCC3080052FB14 /* ReportService.swift in Sources */,
 				B2033D5322DCB67300B79379 /* ServiceClient.swift in Sources */,
 				B2033D5122DCB65800B79379 /* ServiceError.swift in Sources */,
 				B2033D0922DCB0BB00B79379 /* ViewController.swift in Sources */,
 				B232D94722DCBD180052FB14 /* Strings.swift in Sources */,
 				B2033D5C22DCB96200B79379 /* Environment.swift in Sources */,
 				B2033D0722DCB0BB00B79379 /* AppDelegate.swift in Sources */,
+				B232D95222DCC3810052FB14 /* Receipt.swift in Sources */,
 				B232D94522DCBCF90052FB14 /* Colors.swift in Sources */,
 				B2033D4D22DCB5D900B79379 /* ServiceResult.swift in Sources */,
 				B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */,
+				B232D95422DCC4330052FB14 /* ReportRouter.swift in Sources */,
 				B2033D5F22DCBA1100B79379 /* Codable+Extensions.swift in Sources */,
 				B2033D4F22DCB5F400B79379 /* ServiceClientProtocol.swift in Sources */,
+				B232D95022DCC33F0052FB14 /* StatementList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
