@@ -20,7 +20,11 @@ internal enum FontFamily {
     internal static let regular = FontConvertible(name: "ArialMT", family: "Arial", path: "Arial.ttf")
     internal static let all: [FontConvertible] = [regular]
   }
-  internal static let allCustomFonts: [FontConvertible] = [Arial.all].flatMap { $0 }
+  internal enum HelveticaNeue {
+    internal static let light = FontConvertible(name: "HelveticaNeue-Light", family: "Helvetica Neue", path: "helvetica-neue-light.ttf")
+    internal static let all: [FontConvertible] = [light]
+  }
+  internal static let allCustomFonts: [FontConvertible] = [Arial.all, HelveticaNeue.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {
     allCustomFonts.forEach { $0.register() }
   }

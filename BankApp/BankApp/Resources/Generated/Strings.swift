@@ -11,6 +11,10 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
+  /// Conta
+  internal static let account = L10n.tr("Localizable", "account")
+  /// Saldo
+  internal static let balance = L10n.tr("Localizable", "Balance")
   /// Não foi possível carregar a página no momento
   internal static let errorInternetDescription = L10n.tr("Localizable", "errorInternetDescription")
   /// Sem conexão com internet
