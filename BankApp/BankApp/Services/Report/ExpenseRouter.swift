@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum ReportRouter {
+enum ExpenseRouter {
     case fetchReport(id: Int)
 }
 
-extension ReportRouter: ServiceRouter {
+extension ExpenseRouter: ServiceRouter {
     
     var path: String {
         switch self {

@@ -19,9 +19,24 @@ internal struct ColorName {
   internal let rgbaValue: UInt32
   internal var color: Color { return Color(named: self) }
 
-  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#1d1e20"></span>
-  /// Alpha: 100% <br/> (0x1d1e20ff)
-  internal static let backgroundDefault = ColorName(rgbaValue: 0x1d1e20ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#3b49ee"></span>
+  /// Alpha: 100% <br/> (0x3b49eeff)
+  internal static let colorBackgroundHeader = ColorName(rgbaValue: 0x3b49eeff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#fefefe"></span>
+  /// Alpha: 100% <br/> (0xfefefeff)
+  internal static let colorBackgroundTableView = ColorName(rgbaValue: 0xfefefeff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#dbdfe3"></span>
+  /// Alpha: 100% <br/> (0xdbdfe3ff)
+  internal static let colorBorderCell = ColorName(rgbaValue: 0xdbdfe3ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#a8b4c4"></span>
+  /// Alpha: 100% <br/> (0xa8b4c4ff)
+  internal static let colorGrayLight = ColorName(rgbaValue: 0xa8b4c4ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#485465"></span>
+  /// Alpha: 100% <br/> (0x485465ff)
+  internal static let colorGrayStrong = ColorName(rgbaValue: 0x485465ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#485465"></span>
+  /// Alpha: 100% <br/> (0x485465ff)
+  internal static let colorTitleStrong = ColorName(rgbaValue: 0x485465ff)
 }
 // swiftlint:enable identifier_name line_length type_body_length
 

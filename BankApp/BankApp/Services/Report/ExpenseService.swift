@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol ReportServiceProtol  {
-    func fetchReport(id: Int, completion: @escaping (ServiceResult<StatementList>) -> Void)
+protocol ExpenseServiceProtol  {
+    func fetchExpense(id: Int, completion: @escaping (ServiceResult<StatementList>) -> Void)
 }
 
-final  class ReportService: NSObject, ReportServiceProtol {
+final  class ExpenseService: NSObject, ExpenseServiceProtol {
     
     private let serviceProtocol: ServiceClientProtocol
     
@@ -24,8 +24,8 @@ final  class ReportService: NSObject, ReportServiceProtol {
         self.serviceProtocol = service
     }
     
-    func fetchReport(id: Int, completion: @escaping (ServiceResult<StatementList>) -> Void) {
-        let router = ReportRouter.fetchReport(id: id)
+    func fetchExpense(id: Int, completion: @escaping (ServiceResult<StatementList>) -> Void) {
+        let router = ExpenseRouter.fetchReport(id: id)
         self.serviceProtocol.request(router: router) { (response: ServiceResult<StatementList>) in
             switch response {
             case let .success(value):
