@@ -16,15 +16,15 @@
 
 // swiftlint:disable identifier_name line_length type_body_length
 internal enum FontFamily {
-  internal enum Arial {
-    internal static let regular = FontConvertible(name: "ArialMT", family: "Arial", path: "Arial.ttf")
+  internal enum HelveticaNormal {
+    internal static let regular = FontConvertible(name: "Helvetica-Normal", family: "Helvetica-Normal", path: "helvetica-normal.ttf")
     internal static let all: [FontConvertible] = [regular]
   }
   internal enum HelveticaNeue {
-    internal static let light = FontConvertible(name: "HelveticaNeue-Light", family: "Helvetica Neue", path: "helvetica-neue-light.ttf")
-    internal static let all: [FontConvertible] = [light]
+    internal static let regular = FontConvertible(name: "HelveticaNeue-Regular", family: "HelveticaNeue", path: "helveticaneue-regular.ttf")
+    internal static let all: [FontConvertible] = [regular]
   }
-  internal static let allCustomFonts: [FontConvertible] = [Arial.all, HelveticaNeue.all].flatMap { $0 }
+  internal static let allCustomFonts: [FontConvertible] = [HelveticaNormal.all, HelveticaNeue.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {
     allCustomFonts.forEach { $0.register() }
   }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		B2033D1C22DCB0BD00B79379 /* BankAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D1B22DCB0BD00B79379 /* BankAppTests.swift */; };
 		B2033D2722DCB0BD00B79379 /* BankAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D2622DCB0BD00B79379 /* BankAppUITests.swift */; };
 		B2033D3D22DCB25E00B79379 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = B2033D3C22DCB25E00B79379 /* Colors.json */; };
-		B2033D3F22DCB2F600B79379 /* Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2033D3E22DCB2B700B79379 /* Arial.ttf */; };
 		B2033D4522DCB46F00B79379 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = B2033D4422DCB46F00B79379 /* swiftgen.yml */; };
 		B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D4722DCB55100B79379 /* UserAccount.swift */; };
 		B2033D4D22DCB5D900B79379 /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D4C22DCB5D900B79379 /* ServiceResult.swift */; };
@@ -28,20 +27,30 @@
 		B2033D5C22DCB96200B79379 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D5B22DCB96200B79379 /* Environment.swift */; };
 		B2033D5F22DCBA1100B79379 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D5E22DCBA1100B79379 /* Codable+Extensions.swift */; };
 		B2033D6122DCBAB500B79379 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2033D6022DCBAB500B79379 /* Localizable.strings */; };
-		B232D94122DCBCC10052FB14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94022DCBCC10052FB14 /* Strings.swift */; };
 		B232D94322DCBCDF0052FB14 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94222DCBCDF0052FB14 /* Assets.swift */; };
 		B232D94522DCBCF90052FB14 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94422DCBCF90052FB14 /* Colors.swift */; };
-		B232D94722DCBD180052FB14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94622DCBD180052FB14 /* Strings.swift */; };
-		B232D94D22DCC3080052FB14 /* ReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94C22DCC3080052FB14 /* ReportService.swift */; };
+		B232D94D22DCC3080052FB14 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94C22DCC3080052FB14 /* ExpenseService.swift */; };
 		B232D95022DCC33F0052FB14 /* StatementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94F22DCC33F0052FB14 /* StatementList.swift */; };
-		B232D95222DCC3810052FB14 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95122DCC3810052FB14 /* Receipt.swift */; };
-		B232D95422DCC4330052FB14 /* ReportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95322DCC4330052FB14 /* ReportRouter.swift */; };
-		B232D95822DCC7F20052FB14 /* ReportHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95722DCC7F20052FB14 /* ReportHeaderView.swift */; };
-		B232D95A22DCC9230052FB14 /* helvetica-neue-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B232D95922DCC9120052FB14 /* helvetica-neue-light.ttf */; };
+		B232D95222DCC3810052FB14 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95122DCC3810052FB14 /* Expense.swift */; };
+		B232D95422DCC4330052FB14 /* ExpenseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95322DCC4330052FB14 /* ExpenseRouter.swift */; };
+		B232D95822DCC7F20052FB14 /* ExpensesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95722DCC7F20052FB14 /* ExpensesViewCell.swift */; };
 		B232D95D22DCE2D90052FB14 /* CodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95C22DCE2D90052FB14 /* CodeViewProtocol.swift */; };
-		B232D95F22DCE3B00052FB14 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95E22DCE3B00052FB14 /* UIView+Extensions.swift */; };
-		B232D96122DCE44F0052FB14 /* ReportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D96022DCE44F0052FB14 /* ReportListViewController.swift */; };
+		B232D95F22DCE3B00052FB14 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95E22DCE3B00052FB14 /* UIView+Constraints.swift */; };
+		B232D96122DCE44F0052FB14 /* ListExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D96022DCE44F0052FB14 /* ListExpensesViewController.swift */; };
 		B232D96322DCE5230052FB14 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D96222DCE5230052FB14 /* UIViewController+Extensions.swift */; };
+		B232D96522DCE9740052FB14 /* ExpenseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D96422DCE9740052FB14 /* ExpenseHeaderView.swift */; };
+		B232D96B22DCF7860052FB14 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D96A22DCF7860052FB14 /* UITableView+Extensions.swift */; };
+		B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D96C22DCF7FE0052FB14 /* Identifier.swift */; };
+		B232D97122DD28810052FB14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D97022DD28810052FB14 /* Strings.swift */; };
+		B232D97522DD31F80052FB14 /* helvetica-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B232D97422DD31D50052FB14 /* helvetica-normal.ttf */; };
+		B232D97922DD345B0052FB14 /* ExpensePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D97822DD345B0052FB14 /* ExpensePresenter.swift */; };
+		B232D97C22DD349D0052FB14 /* ExpenseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D97B22DD349D0052FB14 /* ExpenseProtocol.swift */; };
+		B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D97D22DD35AE0052FB14 /* ExpenseListCellType.swift */; };
+		B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6D622DE09AD003AF2CE /* UIView+Extensions.swift */; };
+		B276F6D822DE0BA1003AF2CE /* helveticaneue-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B232D97F22DD59B60052FB14 /* helveticaneue-regular.ttf */; };
+		B276F6DA22DE0C51003AF2CE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6D922DE0C51003AF2CE /* Fonts.swift */; };
+		B276F6DC22DE163B003AF2CE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6DB22DE163B003AF2CE /* String+Extensions.swift */; };
+		B276F6DE22DE1869003AF2CE /* Region+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6DD22DE1869003AF2CE /* Region+Extensions.swift */; };
 		FC19FAF9AE124357011F9B38 /* Pods_BankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +93,6 @@
 		B2033D2622DCB0BD00B79379 /* BankAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppUITests.swift; sourceTree = "<group>"; };
 		B2033D2822DCB0BD00B79379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2033D3C22DCB25E00B79379 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
-		B2033D3E22DCB2B700B79379 /* Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arial.ttf; sourceTree = "<group>"; };
 		B2033D4422DCB46F00B79379 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
 		B2033D4722DCB55100B79379 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		B2033D4C22DCB5D900B79379 /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
@@ -95,20 +103,30 @@
 		B2033D5B22DCB96200B79379 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		B2033D5E22DCBA1100B79379 /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
 		B2033D6022DCBAB500B79379 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		B232D94022DCBCC10052FB14 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		B232D94222DCBCDF0052FB14 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		B232D94422DCBCF90052FB14 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		B232D94622DCBD180052FB14 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		B232D94C22DCC3080052FB14 /* ReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportService.swift; sourceTree = "<group>"; };
+		B232D94C22DCC3080052FB14 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		B232D94F22DCC33F0052FB14 /* StatementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementList.swift; sourceTree = "<group>"; };
-		B232D95122DCC3810052FB14 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
-		B232D95322DCC4330052FB14 /* ReportRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRouter.swift; sourceTree = "<group>"; };
-		B232D95722DCC7F20052FB14 /* ReportHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHeaderView.swift; sourceTree = "<group>"; };
-		B232D95922DCC9120052FB14 /* helvetica-neue-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-neue-light.ttf"; sourceTree = "<group>"; };
+		B232D95122DCC3810052FB14 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		B232D95322DCC4330052FB14 /* ExpenseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRouter.swift; sourceTree = "<group>"; };
+		B232D95722DCC7F20052FB14 /* ExpensesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewCell.swift; sourceTree = "<group>"; };
 		B232D95C22DCE2D90052FB14 /* CodeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewProtocol.swift; sourceTree = "<group>"; };
-		B232D95E22DCE3B00052FB14 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		B232D96022DCE44F0052FB14 /* ReportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportListViewController.swift; sourceTree = "<group>"; };
+		B232D95E22DCE3B00052FB14 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		B232D96022DCE44F0052FB14 /* ListExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExpensesViewController.swift; sourceTree = "<group>"; };
 		B232D96222DCE5230052FB14 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		B232D96422DCE9740052FB14 /* ExpenseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseHeaderView.swift; sourceTree = "<group>"; };
+		B232D96A22DCF7860052FB14 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		B232D96C22DCF7FE0052FB14 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		B232D97022DD28810052FB14 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		B232D97422DD31D50052FB14 /* helvetica-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-normal.ttf"; sourceTree = "<group>"; };
+		B232D97822DD345B0052FB14 /* ExpensePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensePresenter.swift; sourceTree = "<group>"; };
+		B232D97B22DD349D0052FB14 /* ExpenseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseProtocol.swift; sourceTree = "<group>"; };
+		B232D97D22DD35AE0052FB14 /* ExpenseListCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListCellType.swift; sourceTree = "<group>"; };
+		B232D97F22DD59B60052FB14 /* helveticaneue-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helveticaneue-regular.ttf"; sourceTree = "<group>"; };
+		B276F6D622DE09AD003AF2CE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		B276F6D922DE0C51003AF2CE /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		B276F6DB22DE163B003AF2CE /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		B276F6DD22DE1869003AF2CE /* Region+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Region+Extensions.swift"; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,10 +243,10 @@
 		B2033D3522DCB1DD00B79379 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				B232D94622DCBD180052FB14 /* Strings.swift */,
+				B276F6D922DE0C51003AF2CE /* Fonts.swift */,
+				B232D97022DD28810052FB14 /* Strings.swift */,
 				B232D94422DCBCF90052FB14 /* Colors.swift */,
 				B232D94222DCBCDF0052FB14 /* Assets.swift */,
-				B232D94022DCBCC10052FB14 /* Strings.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -243,8 +261,8 @@
 		B2033D3722DCB1F000B79379 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				B232D95922DCC9120052FB14 /* helvetica-neue-light.ttf */,
-				B2033D3E22DCB2B700B79379 /* Arial.ttf */,
+				B232D97F22DD59B60052FB14 /* helveticaneue-regular.ttf */,
+				B232D97422DD31D50052FB14 /* helvetica-normal.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -333,8 +351,13 @@
 			isa = PBXGroup;
 			children = (
 				B2033D5E22DCBA1100B79379 /* Codable+Extensions.swift */,
-				B232D95E22DCE3B00052FB14 /* UIView+Extensions.swift */,
+				B232D95E22DCE3B00052FB14 /* UIView+Constraints.swift */,
 				B232D96222DCE5230052FB14 /* UIViewController+Extensions.swift */,
+				B232D96A22DCF7860052FB14 /* UITableView+Extensions.swift */,
+				B232D96C22DCF7FE0052FB14 /* Identifier.swift */,
+				B276F6D622DE09AD003AF2CE /* UIView+Extensions.swift */,
+				B276F6DB22DE163B003AF2CE /* String+Extensions.swift */,
+				B276F6DD22DE1869003AF2CE /* Region+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -342,8 +365,8 @@
 		B232D94B22DCC2FA0052FB14 /* Report */ = {
 			isa = PBXGroup;
 			children = (
-				B232D94C22DCC3080052FB14 /* ReportService.swift */,
-				B232D95322DCC4330052FB14 /* ReportRouter.swift */,
+				B232D94C22DCC3080052FB14 /* ExpenseService.swift */,
+				B232D95322DCC4330052FB14 /* ExpenseRouter.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -352,7 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				B232D94F22DCC33F0052FB14 /* StatementList.swift */,
-				B232D95122DCC3810052FB14 /* Receipt.swift */,
+				B232D95122DCC3810052FB14 /* Expense.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -360,18 +383,19 @@
 		B232D95522DCC7DB0052FB14 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B232D95622DCC7E10052FB14 /* Report */,
+				B232D95622DCC7E10052FB14 /* Expenses */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		B232D95622DCC7E10052FB14 /* Report */ = {
+		B232D95622DCC7E10052FB14 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
-				B232D95722DCC7F20052FB14 /* ReportHeaderView.swift */,
-				B232D96022DCE44F0052FB14 /* ReportListViewController.swift */,
+				B232D97A22DD34910052FB14 /* Protocol */,
+				B232D97722DD343F0052FB14 /* Presenter */,
+				B232D97622DD34350052FB14 /* View */,
 			);
-			path = Report;
+			path = Expenses;
 			sourceTree = "<group>";
 		};
 		B232D95B22DCE2C90052FB14 /* Util */ = {
@@ -380,6 +404,33 @@
 				B232D95C22DCE2D90052FB14 /* CodeViewProtocol.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		B232D97622DD34350052FB14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B232D95722DCC7F20052FB14 /* ExpensesViewCell.swift */,
+				B232D96022DCE44F0052FB14 /* ListExpensesViewController.swift */,
+				B232D96422DCE9740052FB14 /* ExpenseHeaderView.swift */,
+				B232D97D22DD35AE0052FB14 /* ExpenseListCellType.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B232D97722DD343F0052FB14 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B232D97822DD345B0052FB14 /* ExpensePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B232D97A22DD34910052FB14 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B232D97B22DD349D0052FB14 /* ExpenseProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		F38B29D97C867E3AA26DFF96 /* Pods */ = {
@@ -407,6 +458,7 @@
 				B2033D0022DCB0BB00B79379 /* Frameworks */,
 				B2033D0122DCB0BB00B79379 /* Resources */,
 				B2033D4022DCB30C00B79379 /* ShellScript */,
+				8B27481AB80B2C8B74EBF26B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -503,8 +555,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B232D95A22DCC9230052FB14 /* helvetica-neue-light.ttf in Resources */,
-				B2033D3F22DCB2F600B79379 /* Arial.ttf in Resources */,
+				B276F6D822DE0BA1003AF2CE /* helveticaneue-regular.ttf in Resources */,
+				B232D97522DD31F80052FB14 /* helvetica-normal.ttf in Resources */,
 				B2033D4522DCB46F00B79379 /* swiftgen.yml in Resources */,
 				B2033D1122DCB0BD00B79379 /* LaunchScreen.storyboard in Resources */,
 				B2033D6122DCBAB500B79379 /* Localizable.strings in Resources */,
@@ -551,6 +603,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B27481AB80B2C8B74EBF26B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankApp/Pods-BankApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankApp/Pods-BankApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankApp/Pods-BankApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B2033D4022DCB30C00B79379 /* ShellScript */ = {
@@ -622,28 +691,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				B232D96322DCE5230052FB14 /* UIViewController+Extensions.swift in Sources */,
-				B232D95F22DCE3B00052FB14 /* UIView+Extensions.swift in Sources */,
+				B232D97922DD345B0052FB14 /* ExpensePresenter.swift in Sources */,
+				B232D95F22DCE3B00052FB14 /* UIView+Constraints.swift in Sources */,
 				B2033D5522DCB68F00B79379 /* ServiceRouter.swift in Sources */,
-				B232D95822DCC7F20052FB14 /* ReportHeaderView.swift in Sources */,
-				B232D94122DCBCC10052FB14 /* Strings.swift in Sources */,
+				B232D95822DCC7F20052FB14 /* ExpensesViewCell.swift in Sources */,
 				B232D94322DCBCDF0052FB14 /* Assets.swift in Sources */,
-				B232D94D22DCC3080052FB14 /* ReportService.swift in Sources */,
+				B232D94D22DCC3080052FB14 /* ExpenseService.swift in Sources */,
 				B232D95D22DCE2D90052FB14 /* CodeViewProtocol.swift in Sources */,
+				B232D97122DD28810052FB14 /* Strings.swift in Sources */,
 				B2033D5322DCB67300B79379 /* ServiceClient.swift in Sources */,
 				B2033D5122DCB65800B79379 /* ServiceError.swift in Sources */,
 				B2033D0922DCB0BB00B79379 /* ViewController.swift in Sources */,
-				B232D94722DCBD180052FB14 /* Strings.swift in Sources */,
 				B2033D5C22DCB96200B79379 /* Environment.swift in Sources */,
-				B232D96122DCE44F0052FB14 /* ReportListViewController.swift in Sources */,
+				B232D96122DCE44F0052FB14 /* ListExpensesViewController.swift in Sources */,
 				B2033D0722DCB0BB00B79379 /* AppDelegate.swift in Sources */,
-				B232D95222DCC3810052FB14 /* Receipt.swift in Sources */,
+				B232D95222DCC3810052FB14 /* Expense.swift in Sources */,
+				B276F6DA22DE0C51003AF2CE /* Fonts.swift in Sources */,
+				B276F6DE22DE1869003AF2CE /* Region+Extensions.swift in Sources */,
+				B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */,
+				B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */,
+				B232D97C22DD349D0052FB14 /* ExpenseProtocol.swift in Sources */,
 				B232D94522DCBCF90052FB14 /* Colors.swift in Sources */,
 				B2033D4D22DCB5D900B79379 /* ServiceResult.swift in Sources */,
 				B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */,
-				B232D95422DCC4330052FB14 /* ReportRouter.swift in Sources */,
+				B232D95422DCC4330052FB14 /* ExpenseRouter.swift in Sources */,
+				B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */,
+				B232D96B22DCF7860052FB14 /* UITableView+Extensions.swift in Sources */,
 				B2033D5F22DCBA1100B79379 /* Codable+Extensions.swift in Sources */,
 				B2033D4F22DCB5F400B79379 /* ServiceClientProtocol.swift in Sources */,
+				B276F6DC22DE163B003AF2CE /* String+Extensions.swift in Sources */,
 				B232D95022DCC33F0052FB14 /* StatementList.swift in Sources */,
+				B232D96522DCE9740052FB14 /* ExpenseHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

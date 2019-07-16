@@ -18,6 +18,7 @@ colors:
     outputs:
         templateName: swift4
         output: Colors.swift
+
 fonts:
     inputs: Fonts
     outputs:

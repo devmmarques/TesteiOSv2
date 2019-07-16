@@ -1,5 +1,5 @@
 //
-//  StatementList.swift
+//  Receipt.swift
 //  BankApp
 //
 //  Created by Marco Henrique Maia Marques on 15/07/19.
@@ -8,6 +8,9 @@
 
 import Foundation
 
-struct StatementList: Codable {
-    let statementList: [Expense]
+struct Expense: Codable {
+    let title: String
+    let desc: String
+    let date: String
+    let value: Double
 }
