@@ -25,7 +25,7 @@ final class ExpenseHeaderView: UIView {
     private lazy var nameAccountLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.accessibilityIdentifier = "nameAccountLabel"
-        label.font = UIFont(font: FontFamily.HelveticaNormal.regular, size: 26)
+        label.font = UIFont(font: FontFamily.Helvetica.light, size: 25)
         label.textColor = .white
         label.textAlignment = .right
         label.text = "José da Silva teste"
