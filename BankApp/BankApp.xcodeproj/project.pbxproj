@@ -66,6 +66,8 @@
 		B278396422DE6934005423EF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396322DE6934005423EF /* Router.swift */; };
 		B278396622DE6945005423EF /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396522DE6945005423EF /* RouterProtocol.swift */; };
 		B278396822DE6956005423EF /* TabNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396722DE6956005423EF /* TabNavigationRouter.swift */; };
+		B278396B22DE6A4B005423EF /* ExpenseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */; };
+		B278396D22DE6AE0005423EF /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */; };
 		FC19FAF9AE124357011F9B38 /* Pods_BankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +160,8 @@
 		B278396322DE6934005423EF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B278396522DE6945005423EF /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		B278396722DE6956005423EF /* TabNavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationRouter.swift; sourceTree = "<group>"; };
+		B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCoordinator.swift; sourceTree = "<group>"; };
+		B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +230,7 @@
 		B2033D0522DCB0BB00B79379 /* BankApp */ = {
 			isa = PBXGroup;
 			children = (
+				B278396922DE6A1F005423EF /* Flow */,
 				B278394F22DE6867005423EF /* Coordinator */,
 				B232D95522DCC7DB0052FB14 /* Controller */,
 				B2033D5622DCB8E200B79379 /* Commons */,
@@ -512,6 +517,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		B278396922DE6A1F005423EF /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */,
+				B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
 		F38B29D97C867E3AA26DFF96 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -772,6 +786,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B232D96322DCE5230052FB14 /* UIViewController+Extensions.swift in Sources */,
+				B278396B22DE6A4B005423EF /* ExpenseCoordinator.swift in Sources */,
 				B232D97922DD345B0052FB14 /* ExpensePresenter.swift in Sources */,
 				B232D95F22DCE3B00052FB14 /* UIView+Constraints.swift in Sources */,
 				B2033D5522DCB68F00B79379 /* ServiceRouter.swift in Sources */,
@@ -797,6 +812,7 @@
 				B278395922DE68D5005423EF /* Presentable+UIKit.swift in Sources */,
 				B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */,
 				B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */,
+				B278396D22DE6AE0005423EF /* ApplicationCoordinator.swift in Sources */,
 				B278395B22DE68E9005423EF /* Presentable.swift in Sources */,
 				B278396222DE6923005423EF /* TabNavigationRouterProtocol.swift in Sources */,
 				B232D97C22DD349D0052FB14 /* ExpenseProtocol.swift in Sources */,
