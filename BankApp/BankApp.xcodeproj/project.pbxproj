@@ -42,15 +42,20 @@
 		B232D96B22DCF7860052FB14 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D96A22DCF7860052FB14 /* UITableView+Extensions.swift */; };
 		B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D96C22DCF7FE0052FB14 /* Identifier.swift */; };
 		B232D97122DD28810052FB14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D97022DD28810052FB14 /* Strings.swift */; };
-		B232D97522DD31F80052FB14 /* helvetica-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B232D97422DD31D50052FB14 /* helvetica-normal.ttf */; };
 		B232D97922DD345B0052FB14 /* ExpensePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D97822DD345B0052FB14 /* ExpensePresenter.swift */; };
 		B232D97C22DD349D0052FB14 /* ExpenseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D97B22DD349D0052FB14 /* ExpenseProtocol.swift */; };
 		B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D97D22DD35AE0052FB14 /* ExpenseListCellType.swift */; };
 		B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6D622DE09AD003AF2CE /* UIView+Extensions.swift */; };
-		B276F6D822DE0BA1003AF2CE /* helveticaneue-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B232D97F22DD59B60052FB14 /* helveticaneue-regular.ttf */; };
-		B276F6DA22DE0C51003AF2CE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6D922DE0C51003AF2CE /* Fonts.swift */; };
 		B276F6DC22DE163B003AF2CE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6DB22DE163B003AF2CE /* String+Extensions.swift */; };
 		B276F6DE22DE1869003AF2CE /* Region+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6DD22DE1869003AF2CE /* Region+Extensions.swift */; };
+		B276F6E022DE242D003AF2CE /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6DF22DE242D003AF2CE /* Double+Extensions.swift */; };
+		B276F6E222DE42C8003AF2CE /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6E122DE42C8003AF2CE /* TitleHeaderView.swift */; };
+		B276F6F222DE5A37003AF2CE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6F122DE5A36003AF2CE /* Fonts.swift */; };
+		B276F6F322DE5A93003AF2CE /* Helvetica Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6EF22DE5A07003AF2CE /* Helvetica Bold.ttf */; };
+		B276F6F422DE5A93003AF2CE /* Helvetica-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6ED22DE5A06003AF2CE /* Helvetica-Black.otf */; };
+		B276F6F522DE5A93003AF2CE /* Helvetica-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6EC22DE5A06003AF2CE /* Helvetica-Light.otf */; };
+		B276F6F622DE5A93003AF2CE /* Helvetica-Narrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6EE22DE5A06003AF2CE /* Helvetica-Narrow.otf */; };
+		B276F6F722DE5A93003AF2CE /* Helvetica-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6F022DE5A07003AF2CE /* Helvetica-Normal.ttf */; };
 		FC19FAF9AE124357011F9B38 /* Pods_BankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,15 +123,20 @@
 		B232D96A22DCF7860052FB14 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		B232D96C22DCF7FE0052FB14 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		B232D97022DD28810052FB14 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		B232D97422DD31D50052FB14 /* helvetica-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helvetica-normal.ttf"; sourceTree = "<group>"; };
 		B232D97822DD345B0052FB14 /* ExpensePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensePresenter.swift; sourceTree = "<group>"; };
 		B232D97B22DD349D0052FB14 /* ExpenseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseProtocol.swift; sourceTree = "<group>"; };
 		B232D97D22DD35AE0052FB14 /* ExpenseListCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListCellType.swift; sourceTree = "<group>"; };
-		B232D97F22DD59B60052FB14 /* helveticaneue-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helveticaneue-regular.ttf"; sourceTree = "<group>"; };
 		B276F6D622DE09AD003AF2CE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		B276F6D922DE0C51003AF2CE /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		B276F6DB22DE163B003AF2CE /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B276F6DD22DE1869003AF2CE /* Region+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Region+Extensions.swift"; sourceTree = "<group>"; };
+		B276F6DF22DE242D003AF2CE /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		B276F6E122DE42C8003AF2CE /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
+		B276F6EC22DE5A06003AF2CE /* Helvetica-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Light.otf"; sourceTree = "<group>"; };
+		B276F6ED22DE5A06003AF2CE /* Helvetica-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Black.otf"; sourceTree = "<group>"; };
+		B276F6EE22DE5A06003AF2CE /* Helvetica-Narrow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Narrow.otf"; sourceTree = "<group>"; };
+		B276F6EF22DE5A07003AF2CE /* Helvetica Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Bold.ttf"; sourceTree = "<group>"; };
+		B276F6F022DE5A07003AF2CE /* Helvetica-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Normal.ttf"; sourceTree = "<group>"; };
+		B276F6F122DE5A36003AF2CE /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,7 +253,7 @@
 		B2033D3522DCB1DD00B79379 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				B276F6D922DE0C51003AF2CE /* Fonts.swift */,
+				B276F6F122DE5A36003AF2CE /* Fonts.swift */,
 				B232D97022DD28810052FB14 /* Strings.swift */,
 				B232D94422DCBCF90052FB14 /* Colors.swift */,
 				B232D94222DCBCDF0052FB14 /* Assets.swift */,
@@ -261,8 +271,11 @@
 		B2033D3722DCB1F000B79379 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				B232D97F22DD59B60052FB14 /* helveticaneue-regular.ttf */,
-				B232D97422DD31D50052FB14 /* helvetica-normal.ttf */,
+				B276F6EF22DE5A07003AF2CE /* Helvetica Bold.ttf */,
+				B276F6ED22DE5A06003AF2CE /* Helvetica-Black.otf */,
+				B276F6EC22DE5A06003AF2CE /* Helvetica-Light.otf */,
+				B276F6EE22DE5A06003AF2CE /* Helvetica-Narrow.otf */,
+				B276F6F022DE5A07003AF2CE /* Helvetica-Normal.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -358,6 +371,7 @@
 				B276F6D622DE09AD003AF2CE /* UIView+Extensions.swift */,
 				B276F6DB22DE163B003AF2CE /* String+Extensions.swift */,
 				B276F6DD22DE1869003AF2CE /* Region+Extensions.swift */,
+				B276F6DF22DE242D003AF2CE /* Double+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -413,6 +427,7 @@
 				B232D96022DCE44F0052FB14 /* ListExpensesViewController.swift */,
 				B232D96422DCE9740052FB14 /* ExpenseHeaderView.swift */,
 				B232D97D22DD35AE0052FB14 /* ExpenseListCellType.swift */,
+				B276F6E122DE42C8003AF2CE /* TitleHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,8 +570,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B276F6D822DE0BA1003AF2CE /* helveticaneue-regular.ttf in Resources */,
-				B232D97522DD31F80052FB14 /* helvetica-normal.ttf in Resources */,
+				B276F6F322DE5A93003AF2CE /* Helvetica Bold.ttf in Resources */,
+				B276F6F422DE5A93003AF2CE /* Helvetica-Black.otf in Resources */,
+				B276F6F522DE5A93003AF2CE /* Helvetica-Light.otf in Resources */,
+				B276F6F622DE5A93003AF2CE /* Helvetica-Narrow.otf in Resources */,
+				B276F6F722DE5A93003AF2CE /* Helvetica-Normal.ttf in Resources */,
 				B2033D4522DCB46F00B79379 /* swiftgen.yml in Resources */,
 				B2033D1122DCB0BD00B79379 /* LaunchScreen.storyboard in Resources */,
 				B2033D6122DCBAB500B79379 /* Localizable.strings in Resources */,
@@ -699,6 +717,7 @@
 				B232D94D22DCC3080052FB14 /* ExpenseService.swift in Sources */,
 				B232D95D22DCE2D90052FB14 /* CodeViewProtocol.swift in Sources */,
 				B232D97122DD28810052FB14 /* Strings.swift in Sources */,
+				B276F6E022DE242D003AF2CE /* Double+Extensions.swift in Sources */,
 				B2033D5322DCB67300B79379 /* ServiceClient.swift in Sources */,
 				B2033D5122DCB65800B79379 /* ServiceError.swift in Sources */,
 				B2033D0922DCB0BB00B79379 /* ViewController.swift in Sources */,
@@ -706,13 +725,14 @@
 				B232D96122DCE44F0052FB14 /* ListExpensesViewController.swift in Sources */,
 				B2033D0722DCB0BB00B79379 /* AppDelegate.swift in Sources */,
 				B232D95222DCC3810052FB14 /* Expense.swift in Sources */,
-				B276F6DA22DE0C51003AF2CE /* Fonts.swift in Sources */,
+				B276F6E222DE42C8003AF2CE /* TitleHeaderView.swift in Sources */,
 				B276F6DE22DE1869003AF2CE /* Region+Extensions.swift in Sources */,
 				B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */,
 				B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */,
 				B232D97C22DD349D0052FB14 /* ExpenseProtocol.swift in Sources */,
 				B232D94522DCBCF90052FB14 /* Colors.swift in Sources */,
 				B2033D4D22DCB5D900B79379 /* ServiceResult.swift in Sources */,
+				B276F6F222DE5A37003AF2CE /* Fonts.swift in Sources */,
 				B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */,
 				B232D95422DCC4330052FB14 /* ExpenseRouter.swift in Sources */,
 				B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */,

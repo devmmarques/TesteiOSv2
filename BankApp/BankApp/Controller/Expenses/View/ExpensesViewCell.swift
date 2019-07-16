@@ -32,7 +32,7 @@ class ExpensesViewCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.accessibilityIdentifier = "descLabel"
         label.font = UIFont(font: FontFamily.HelveticaNormal.regular, size: 16)
-        label.textColor = ColorName.colorGrayStrong.color
+        label.textColor = ColorName.colorTitleStrong.color
         label.textAlignment = .right
         return label
     }()
@@ -49,8 +49,8 @@ class ExpensesViewCell: UITableViewCell {
     private lazy var valueLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.accessibilityIdentifier = "valueLabel"
-        label.font = UIFont(font: FontFamily.HelveticaNormal.regular, size: 20)
-        label.textColor = ColorName.colorGrayStrong.color
+        label.font = UIFont(font: FontFamily.Helvetica.light, size: 20)
+        label.textColor = ColorName.colorTitleStrong.color
         label.textAlignment = .left
         return label
     }()
@@ -60,7 +60,13 @@ class ExpensesViewCell: UITableViewCell {
         titleLabel.text = expense.title
         descLabel.text = expense.desc
         dateLabel.text = expense.date.toDateFormatted(with: "dd/MM/yyyy")
-        valueLabel.text = "R$" + String(format:"%f", expense.value)
+        
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = Locale(identifier: "pt_BR")
+        
+        valueLabel.text = expense.value.toPriceFormatted()
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -86,7 +92,7 @@ class ExpensesViewCell: UITableViewCell {
     private func configureLayoutContact() {
         viewExpense.layer.cornerRadius = 10
         viewExpense.layer.masksToBounds = true
-        viewExpense.applyCellShadow(color: ColorName.colorBorderCell.color, radius: 10, opacity: 0.3)
+        viewExpense.applyCellShadow(color: ColorName.colorBorderCell.color, radius: 10, opacity: 0.5)
     }
 }
 
@@ -110,18 +116,18 @@ extension ExpensesViewCell: CodeViewProtocol {
         
         titleLabel.anchor(top: viewExpense.topAnchor,
                           leading: viewExpense.leadingAnchor,
-                          insets: .init(top: 10, left: 10, bottom: 0, right: 0))
+                          insets: .init(top: 16, left: 16, bottom: 0, right: 0))
         
         descLabel.anchor(leading: viewExpense.leadingAnchor,
                          bottom: viewExpense.bottomAnchor,
-                         insets: .init(top: 0, left: 10, bottom: 10, right: 0))
+                         insets: .init(top: 0, left: 16, bottom: 10, right: 0))
         
         dateLabel.anchor(top: viewExpense.topAnchor,
                          trailing: viewExpense.trailingAnchor,
-                         insets: .init(top: 10, left: 0, bottom: 0, right: 10))
+                         insets: .init(top: 16, left: 0, bottom: 0, right: 16))
         
         valueLabel.anchor(bottom: viewExpense.bottomAnchor,
                           trailing: viewExpense.trailingAnchor,
-                          insets: .init(top: 0, left: 0, bottom: 10, right: 10))
+                          insets: .init(top: 0, left: 0, bottom: 10, right: 16))
     }
 }

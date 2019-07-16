@@ -34,6 +34,9 @@ internal struct ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#485465"></span>
   /// Alpha: 100% <br/> (0x485465ff)
   internal static let colorGrayStrong = ColorName(rgbaValue: 0x485465ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#485465"></span>
+  /// Alpha: 100% <br/> (0x485465ff)
+  internal static let colorTitleStrong = ColorName(rgbaValue: 0x485465ff)
 }
 // swiftlint:enable identifier_name line_length type_body_length
 

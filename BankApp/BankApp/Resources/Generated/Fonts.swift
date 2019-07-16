@@ -16,15 +16,18 @@
 
 // swiftlint:disable identifier_name line_length type_body_length
 internal enum FontFamily {
+  internal enum Helvetica {
+    internal static let black = FontConvertible(name: "Helvetica-Black", family: "Helvetica", path: "Helvetica-Black.otf")
+    internal static let bold = FontConvertible(name: "Helvetica-Bold", family: "Helvetica", path: "HelveticaBold.ttf")
+    internal static let light = FontConvertible(name: "Helvetica-Light", family: "Helvetica", path: "Helvetica-Light.otf")
+    internal static let narrow = FontConvertible(name: "Helvetica-Narrow", family: "Helvetica", path: "Helvetica-Narrow.otf")
+    internal static let all: [FontConvertible] = [black, bold, light, narrow]
+  }
   internal enum HelveticaNormal {
-    internal static let regular = FontConvertible(name: "Helvetica-Normal", family: "Helvetica-Normal", path: "helvetica-normal.ttf")
+    internal static let regular = FontConvertible(name: "Helvetica-Normal", family: "Helvetica-Normal", path: "Helvetica-Normal.ttf")
     internal static let all: [FontConvertible] = [regular]
   }
-  internal enum HelveticaNeue {
-    internal static let regular = FontConvertible(name: "HelveticaNeue-Regular", family: "HelveticaNeue", path: "helveticaneue-regular.ttf")
-    internal static let all: [FontConvertible] = [regular]
-  }
-  internal static let allCustomFonts: [FontConvertible] = [HelveticaNormal.all, HelveticaNeue.all].flatMap { $0 }
+  internal static let allCustomFonts: [FontConvertible] = [Helvetica.all, HelveticaNormal.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {
     allCustomFonts.forEach { $0.register() }
   }

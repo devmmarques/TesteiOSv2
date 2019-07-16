@@ -23,6 +23,8 @@ internal enum L10n {
   internal static let errorUnexpectedDescription = L10n.tr("Localizable", "errorUnexpectedDescription")
   /// Erro inesperado
   internal static let errorUnexpectedTitle = L10n.tr("Localizable", "errorUnexpectedTitle")
+  /// Recentes
+  internal static let recent = L10n.tr("Localizable", "Recent")
   /// teste
   internal static let teste = L10n.tr("Localizable", "teste")
 }

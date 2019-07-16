@@ -1,6 +1,7 @@
 
 "account" = "Conta";
 "Balance" = "Saldo";
+"Recent" = "Recentes";
 "teste" = "teste";
 "errorInternetDescription" = "Não foi possível carregar a página no momento";
 "errorUnexpectedDescription" = "Não foi possivel carregar a página no momento. Por favor, tente mais tarde.";

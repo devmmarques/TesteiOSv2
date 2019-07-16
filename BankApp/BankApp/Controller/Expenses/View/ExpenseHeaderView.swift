@@ -25,7 +25,7 @@ final class ExpenseHeaderView: UIView {
     private lazy var nameAccountLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.accessibilityIdentifier = "nameAccountLabel"
-        label.font = UIFont(font: FontFamily.HelveticaNeue.regular, size: 26)
+        label.font = UIFont(font: FontFamily.HelveticaNormal.regular, size: 26)
         label.textColor = .white
         label.textAlignment = .right
         label.text = "José da Silva teste"
@@ -35,7 +35,7 @@ final class ExpenseHeaderView: UIView {
     private lazy var titleAccountLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.accessibilityIdentifier = "titleAccountLabel"
-        label.font = UIFont(font: FontFamily.HelveticaNeue.regular, size: 12)
+        label.font = UIFont(font: FontFamily.HelveticaNormal.regular, size: 12)
         label.textColor = .white
         label.textAlignment = .right
         label.text = L10n.account
@@ -45,7 +45,7 @@ final class ExpenseHeaderView: UIView {
     private lazy var numberAccountLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.accessibilityIdentifier = "numberAccountLabel"
-        label.font = UIFont(font: FontFamily.HelveticaNeue.regular, size: 25)
+        label.font = UIFont(font: FontFamily.Helvetica.light, size: 25)
         label.textColor = .white
         label.textAlignment = .right
         label.text = "2050 / 01.11122-4"
@@ -55,7 +55,7 @@ final class ExpenseHeaderView: UIView {
     private lazy var titleValueLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.accessibilityIdentifier = "titleValueLabel"
-        label.font = UIFont(font: FontFamily.HelveticaNeue.regular, size: 12)
+        label.font = UIFont(font: FontFamily.HelveticaNormal.regular, size: 12)
         label.textColor = .white
         label.textAlignment = .right
         label.text = L10n.balance
@@ -65,7 +65,7 @@ final class ExpenseHeaderView: UIView {
     private lazy var valueAccountLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.accessibilityIdentifier = "titleAccountLabel"
-        label.font = UIFont(font: FontFamily.HelveticaNeue.regular, size: 25)
+        label.font = UIFont(font: FontFamily.Helvetica.light, size: 25)
         label.textColor = .white
         label.textAlignment = .right
         label.text = "R$1.000,00"

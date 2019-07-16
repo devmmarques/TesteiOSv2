@@ -96,11 +96,14 @@ extension ListExpensesViewController: UITableViewDelegate {
 extension ListExpensesViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.getCountExpense()
+        if section == 1 {
+          return presenter.getCountExpense()
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -119,16 +122,17 @@ extension ListExpensesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = ExpenseHeaderView(frame: .zero)
-        return header
+        if section == 0 {
+            let header = ExpenseHeaderView(frame: .zero)
+            return header
+        } else {
+            let titleHeader = TitleHeaderView(frame: .zero, title: L10n.recent, colorBackGround: ColorName.colorBackgroundTableView.color)
+            return titleHeader
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return ExpenseHeaderView.tableViewHeaderHeight
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Recentes"
+        return UITableView.automaticDimension
     }
 }
 

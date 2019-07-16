@@ -12,7 +12,10 @@ import SwiftDate
 extension String {
     
     func toDateFormatted(with format: String) -> String {
-        let date = toDate("dd.MM.yyyy", region: .brazil)
+        let date = toDate("yyyy.MM.dd", region: .brazil)
         return date?.toFormat(format) ?? ""
     }
+    
+
 }
+
