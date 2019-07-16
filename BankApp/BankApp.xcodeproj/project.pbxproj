@@ -55,7 +55,6 @@
 		B276F6F422DE5A93003AF2CE /* Helvetica-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6ED22DE5A06003AF2CE /* Helvetica-Black.otf */; };
 		B276F6F522DE5A93003AF2CE /* Helvetica-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6EC22DE5A06003AF2CE /* Helvetica-Light.otf */; };
 		B276F6F622DE5A93003AF2CE /* Helvetica-Narrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6EE22DE5A06003AF2CE /* Helvetica-Narrow.otf */; };
-		B276F6F722DE5A93003AF2CE /* Helvetica-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6F022DE5A07003AF2CE /* Helvetica-Normal.ttf */; };
 		FC19FAF9AE124357011F9B38 /* Pods_BankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,8 +134,8 @@
 		B276F6ED22DE5A06003AF2CE /* Helvetica-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Black.otf"; sourceTree = "<group>"; };
 		B276F6EE22DE5A06003AF2CE /* Helvetica-Narrow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Narrow.otf"; sourceTree = "<group>"; };
 		B276F6EF22DE5A07003AF2CE /* Helvetica Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Bold.ttf"; sourceTree = "<group>"; };
-		B276F6F022DE5A07003AF2CE /* Helvetica-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Normal.ttf"; sourceTree = "<group>"; };
 		B276F6F122DE5A36003AF2CE /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		B276F6F822DE6344003AF2CE /* Helvetica-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Normal.ttf"; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,9 +272,9 @@
 			children = (
 				B276F6EF22DE5A07003AF2CE /* Helvetica Bold.ttf */,
 				B276F6ED22DE5A06003AF2CE /* Helvetica-Black.otf */,
+				B276F6F822DE6344003AF2CE /* Helvetica-Normal.ttf */,
 				B276F6EC22DE5A06003AF2CE /* Helvetica-Light.otf */,
 				B276F6EE22DE5A06003AF2CE /* Helvetica-Narrow.otf */,
-				B276F6F022DE5A07003AF2CE /* Helvetica-Normal.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -574,7 +573,6 @@
 				B276F6F422DE5A93003AF2CE /* Helvetica-Black.otf in Resources */,
 				B276F6F522DE5A93003AF2CE /* Helvetica-Light.otf in Resources */,
 				B276F6F622DE5A93003AF2CE /* Helvetica-Narrow.otf in Resources */,
-				B276F6F722DE5A93003AF2CE /* Helvetica-Normal.ttf in Resources */,
 				B2033D4522DCB46F00B79379 /* swiftgen.yml in Resources */,
 				B2033D1122DCB0BD00B79379 /* LaunchScreen.storyboard in Resources */,
 				B2033D6122DCBAB500B79379 /* Localizable.strings in Resources */,
