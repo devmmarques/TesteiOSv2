@@ -25,6 +25,7 @@ final class ExpensePresenter {
     }
     
     func fetchExpenses() {
+        allExpenses = [.loading]
         self.service.fetchExpenses(idExpense: 1) { [weak self] result in
             guard let self = self else { return }
             switch result {

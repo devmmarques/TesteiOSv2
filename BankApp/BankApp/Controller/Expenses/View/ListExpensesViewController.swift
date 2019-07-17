@@ -56,6 +56,7 @@ final class ListExpensesViewController: UIViewController {
         self.tableView.contentInsetAdjustmentBehavior = .automatic
         setStatusBarBackgroundColor(color: ColorName.colorBackgroundHeader.color)
         tableView.register(ExpensesViewCell.self)
+        tableView.register(LoadingViewCell.self)
     }
     
     init(userAccount: UserAccount?) {
@@ -121,7 +122,8 @@ extension ListExpensesViewController: UITableViewDataSource {
             return UITableViewCell()
             
         case .loading:
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as LoadingViewCell
+            return cell
         }
     }
     
