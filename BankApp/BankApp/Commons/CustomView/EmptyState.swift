@@ -14,14 +14,22 @@ enum EmptyState {
     var title: String {
         switch self {
         case .expense:
-            return ""
+            return L10n.emptyStateExpenseTitle
         }
     }
     
     var description: String {
         switch self {
         case .expense:
-            return ""
+            return L10n.emptyStateExpenseDescription
+        }
+    }
+    
+    var imageName: UIImage {
+        switch self {
+        case .expense:
+            return Asset.icCodebarEmptystate.image
         }
     }
 }
+

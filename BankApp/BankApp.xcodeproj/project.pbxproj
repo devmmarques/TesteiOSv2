@@ -90,6 +90,9 @@
 		B289965522DFC18B003D8C37 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289965422DFC18B003D8C37 /* LoginViewControllerTests.swift */; };
 		B289965722DFC990003D8C37 /* LoadingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289965622DFC990003D8C37 /* LoadingViewCell.swift */; };
 		B289965922DFCA0B003D8C37 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = B289965822DFCA0B003D8C37 /* loading.json */; };
+		B289965B22DFCC41003D8C37 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289965A22DFCC41003D8C37 /* ErrorView.swift */; };
+		B289965D22DFCE2E003D8C37 /* ErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289965C22DFCE2E003D8C37 /* ErrorTableViewCell.swift */; };
+		B289965F22DFCF00003D8C37 /* ManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289965E22DFCF00003D8C37 /* ManagerError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +209,9 @@
 		B289965422DFC18B003D8C37 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		B289965622DFC990003D8C37 /* LoadingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewCell.swift; sourceTree = "<group>"; };
 		B289965822DFCA0B003D8C37 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		B289965A22DFCC41003D8C37 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		B289965C22DFCE2E003D8C37 /* ErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTableViewCell.swift; sourceTree = "<group>"; };
+		B289965E22DFCF00003D8C37 /* ManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerError.swift; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F82FB0D927EC870EA2AB8B8E /* Pods-BankApp-BankAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp-BankAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BankApp-BankAppUITests/Pods-BankApp-BankAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -497,6 +503,9 @@
 			children = (
 				B2064FCE22DF8C950013F27C /* EmptyState.swift */,
 				B289965622DFC990003D8C37 /* LoadingViewCell.swift */,
+				B289965A22DFCC41003D8C37 /* ErrorView.swift */,
+				B289965C22DFCE2E003D8C37 /* ErrorTableViewCell.swift */,
+				B289965E22DFCF00003D8C37 /* ManagerError.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -1010,6 +1019,7 @@
 				B2064FAB22DF6B290013F27C /* LoginViewController.swift in Sources */,
 				B276F6E022DE242D003AF2CE /* Double+Extensions.swift in Sources */,
 				B289964022DFA605003D8C37 /* LoginCoordinator.swift in Sources */,
+				B289965D22DFCE2E003D8C37 /* ErrorTableViewCell.swift in Sources */,
 				B278396022DE6912005423EF /* NavigationRouter.swift in Sources */,
 				B2064FBC22DF85AF0013F27C /* LoginError.swift in Sources */,
 				B2064FC622DF8BEC0013F27C /* ParamsBuilder.swift in Sources */,
@@ -1023,6 +1033,7 @@
 				B289964322DFBA6B003D8C37 /* DefaultKeychainWrapper.swift in Sources */,
 				B278395922DE68D5005423EF /* Presentable+UIKit.swift in Sources */,
 				B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */,
+				B289965B22DFCC41003D8C37 /* ErrorView.swift in Sources */,
 				B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */,
 				B278396D22DE6AE0005423EF /* ApplicationCoordinator.swift in Sources */,
 				B278395B22DE68E9005423EF /* Presentable.swift in Sources */,
@@ -1036,6 +1047,7 @@
 				B276F6F222DE5A37003AF2CE /* Fonts.swift in Sources */,
 				B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */,
 				B278395122DE687D005423EF /* Coordinator.swift in Sources */,
+				B289965F22DFCF00003D8C37 /* ManagerError.swift in Sources */,
 				B2064FC822DF8BFC0013F27C /* HTTPMethod.swift in Sources */,
 				B2064FB822DF82BB0013F27C /* LoginResponse.swift in Sources */,
 				B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */,

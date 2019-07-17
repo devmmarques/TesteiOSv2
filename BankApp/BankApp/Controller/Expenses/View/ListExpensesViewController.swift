@@ -23,17 +23,29 @@ final class ListExpensesViewController: UIViewController {
         return tableView
     }()
     
-    private lazy var presenter: ExpensePresenter = {
-        let presenter = ExpensePresenter(viewProtocol: self, serviceAPI: ExpenseService())
-        return presenter
-    }()
+    private let presenter: ExpensePresenter
     
     private let userAccount: UserAccount?
+    
+    init(userAccount: UserAccount, presenter: ExpensePresenter = ExpensePresenter()) {
+        self.userAccount = userAccount
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+        tableView.register(ExpensesViewCell.self)
+        tableView.register(LoadingViewCell.self)
+        tableView.register(ErrorTableViewCell.self)
+        presenter.viewProtocol = self
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        presenter.fetchExpenses()
+        guard let user = userAccount else { return }
+        presenter.fetchExpenses(idExpense: user.userId)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,17 +67,6 @@ final class ListExpensesViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.contentInsetAdjustmentBehavior = .automatic
         setStatusBarBackgroundColor(color: ColorName.colorBackgroundHeader.color)
-        tableView.register(ExpensesViewCell.self)
-        tableView.register(LoadingViewCell.self)
-    }
-    
-    init(userAccount: UserAccount?) {
-        self.userAccount = userAccount
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
 
@@ -118,9 +119,13 @@ extension ListExpensesViewController: UITableViewDataSource {
             cell.setup(expense: expenseValue)
             return cell
         case let .error(error):
-            print(error)
-            return UITableViewCell()
-            
+            let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ErrorTableViewCell
+            cell.setupCell(error: error) { [weak self] in
+                guard let self = self else { return }
+                guard let user = self.userAccount  else { return }
+                self.presenter.fetchExpenses(idExpense: user.userId)
+            }
+            return cell
         case .loading:
             let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as LoadingViewCell
             return cell
