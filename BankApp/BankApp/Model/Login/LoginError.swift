@@ -9,6 +9,6 @@
 import Foundation
 
 struct LoginError: Codable {
-    let code: Int
-    let message: String
+    let code: Int?
+    let message: String?
 }

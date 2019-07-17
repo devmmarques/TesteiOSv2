@@ -10,5 +10,5 @@ import Foundation
 
 struct LoginResponse: Codable {
     let userAccount: UserAccount
-//    let error: LoginError?
+    let error: LoginError?
 }
