@@ -18,15 +18,38 @@ class LoginPresenter {
     }
     
     func doLogin(user: String, password: String) {
+        viewProtocol?.showLoading()
         let login = Login(email: user, password: password)
         self.loginService.doLogin(login: login) { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case let .success(login):
-                print(login)
+                let keychain = DefaultKeychainWrapper()
+                keychain.save(key: "userLogin", object: login)
+                self.viewProtocol?.dismissLoading()
+                self.viewProtocol?.didFinishLogin?(login.userAccount)
+                
             case let.failure(error):
-                print(error)
+                self.viewProtocol?.dismissLoading()
+                self.viewProtocol?.show(error: error)
             }
         }
+    }
+    
+    func validatePassword(password: String) -> Bool {
+        if password.isValidPassword() {
+            return true
+        }
+        viewProtocol?.show(error: L10n.errorUserPasswordInvalid)
+        return false
+    }
+    
+    func validateUser(user: String) -> Bool {
+        if user.isValidCPF() || user.isValidEmail() {
+            return true
+        }
+        viewProtocol?.show(error: L10n.errorUserPasswordInvalid)
+        return false
     }
     
 }

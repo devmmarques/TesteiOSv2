@@ -79,6 +79,8 @@
 		B278396B22DE6A4B005423EF /* ExpenseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */; };
 		B278396D22DE6AE0005423EF /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */; };
 		B289963E22DF9178003D8C37 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289963D22DF9178003D8C37 /* Login.swift */; };
+		B289964022DFA605003D8C37 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289963F22DFA605003D8C37 /* LoginCoordinator.swift */; };
+		B289964322DFBA6B003D8C37 /* DefaultKeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289964222DFBA6B003D8C37 /* DefaultKeychainWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +187,8 @@
 		B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCoordinator.swift; sourceTree = "<group>"; };
 		B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		B289963D22DF9178003D8C37 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B289963F22DFA605003D8C37 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		B289964222DFBA6B003D8C37 /* DefaultKeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeychainWrapper.swift; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F82FB0D927EC870EA2AB8B8E /* Pods-BankApp-BankAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp-BankAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BankApp-BankAppUITests/Pods-BankApp-BankAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -524,6 +528,7 @@
 		B232D95B22DCE2C90052FB14 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				B289964122DFBA5E003D8C37 /* Security */,
 				B232D95C22DCE2D90052FB14 /* CodeViewProtocol.swift */,
 			);
 			path = Util;
@@ -604,8 +609,17 @@
 			children = (
 				B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */,
 				B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */,
+				B289963F22DFA605003D8C37 /* LoginCoordinator.swift */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		B289964122DFBA5E003D8C37 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				B289964222DFBA6B003D8C37 /* DefaultKeychainWrapper.swift */,
+			);
+			path = Security;
 			sourceTree = "<group>";
 		};
 		F38B29D97C867E3AA26DFF96 /* Pods */ = {
@@ -927,6 +941,7 @@
 				B278396622DE6945005423EF /* RouterProtocol.swift in Sources */,
 				B2064FAB22DF6B290013F27C /* LoginViewController.swift in Sources */,
 				B276F6E022DE242D003AF2CE /* Double+Extensions.swift in Sources */,
+				B289964022DFA605003D8C37 /* LoginCoordinator.swift in Sources */,
 				B278396022DE6912005423EF /* NavigationRouter.swift in Sources */,
 				B2064FBC22DF85AF0013F27C /* LoginError.swift in Sources */,
 				B2064FC622DF8BEC0013F27C /* ParamsBuilder.swift in Sources */,
@@ -937,6 +952,7 @@
 				B276F6E222DE42C8003AF2CE /* TitleHeaderView.swift in Sources */,
 				B276F6DE22DE1869003AF2CE /* Region+Extensions.swift in Sources */,
 				B2064FD422DF8D510013F27C /* Environment.swift in Sources */,
+				B289964322DFBA6B003D8C37 /* DefaultKeychainWrapper.swift in Sources */,
 				B278395922DE68D5005423EF /* Presentable+UIKit.swift in Sources */,
 				B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */,
 				B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */,

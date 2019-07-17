@@ -15,6 +15,8 @@ internal enum L10n {
   internal static let account = L10n.tr("Localizable", "account")
   /// Saldo
   internal static let balance = L10n.tr("Localizable", "Balance")
+  /// Error
+  internal static let error = L10n.tr("Localizable", "error")
   /// Não foi possível carregar a página no momento
   internal static let errorInternetDescription = L10n.tr("Localizable", "errorInternetDescription")
   /// Sem conexão com internet
@@ -23,6 +25,8 @@ internal enum L10n {
   internal static let errorUnexpectedDescription = L10n.tr("Localizable", "errorUnexpectedDescription")
   /// Erro inesperado
   internal static let errorUnexpectedTitle = L10n.tr("Localizable", "errorUnexpectedTitle")
+  /// Usuário ou senha inválidos
+  internal static let errorUserPasswordInvalid = L10n.tr("Localizable", "errorUserPasswordInvalid")
   /// Recentes
   internal static let recent = L10n.tr("Localizable", "Recent")
   /// teste

@@ -7,8 +7,9 @@
 //
 
 protocol LoginViewProtocol: AnyObject {
-    func success()
+    var didFinishLogin: ((UserAccount) -> Void)? { get set }
     func showLoading()
     func dismissLoading()
+    func show(error: String)
     func show(error: Error)
 }

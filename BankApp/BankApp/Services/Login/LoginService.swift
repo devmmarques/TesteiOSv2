@@ -24,7 +24,7 @@ final  class LoginService: NSObject, LoginServiceProtol {
     func doLogin(login: Login, completion: @escaping (LoginResult) -> Void) {
         let parameters: [String: Any] = ["user": login.email,
                                          "password": login.password]
-        service.request(urlString: API.Path.doLogin.value, method: .post, parameters: parameters, encoding: .json) { (result: LoginResult) in
+        service.request(urlString: API.Path.doLogin.value, method: .post, parameters: parameters) { (result: LoginResult) in
             switch result {
             case let .success(login):
                 completion(.success(login))

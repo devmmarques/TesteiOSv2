@@ -54,6 +54,14 @@
                                     <action selector="doLogin:" destination="0Cs-xF-TQb" eventType="touchUpInside" id="W2f-eV-TYR"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7eH-Kx-bhF">
+                                <rect key="frame" x="135" y="410" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="QZe-n6-BsU"/>
+                                    <constraint firstAttribute="height" constant="50" id="UU2-Io-7mN"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -65,9 +73,11 @@
                             <constraint firstItem="mI7-IX-xn5" firstAttribute="top" secondItem="EvV-ns-TL8" secondAttribute="bottom" constant="120" id="PaF-Ny-4yq"/>
                             <constraint firstItem="vsK-uR-HWl" firstAttribute="trailing" secondItem="EvV-ns-TL8" secondAttribute="trailing" constant="20" id="TQp-Hz-DFk"/>
                             <constraint firstItem="1c6-IV-zay" firstAttribute="leading" secondItem="vsK-uR-HWl" secondAttribute="leading" constant="70" id="UzS-ju-eoS"/>
+                            <constraint firstItem="7eH-Kx-bhF" firstAttribute="centerX" secondItem="EvV-ns-TL8" secondAttribute="centerX" id="XHV-5Q-ovT"/>
                             <constraint firstItem="c8C-rj-q3l" firstAttribute="top" secondItem="1c6-IV-zay" secondAttribute="bottom" constant="90" id="cSU-tO-rq8"/>
                             <constraint firstItem="1c6-IV-zay" firstAttribute="centerX" secondItem="fmg-Ok-zLk" secondAttribute="centerX" id="fpp-ec-OH0"/>
                             <constraint firstItem="vsK-uR-HWl" firstAttribute="trailing" secondItem="1c6-IV-zay" secondAttribute="trailing" constant="70" id="gCa-ax-cxM"/>
+                            <constraint firstItem="7eH-Kx-bhF" firstAttribute="top" secondItem="EvV-ns-TL8" secondAttribute="bottom" constant="40" id="krU-DL-3qq"/>
                             <constraint firstItem="EvV-ns-TL8" firstAttribute="top" secondItem="c8C-rj-q3l" secondAttribute="bottom" constant="20" id="o6m-8T-GvQ"/>
                             <constraint firstItem="c8C-rj-q3l" firstAttribute="centerX" secondItem="fmg-Ok-zLk" secondAttribute="centerX" id="uCb-dB-WQy"/>
                             <constraint firstItem="EvV-ns-TL8" firstAttribute="leading" secondItem="vsK-uR-HWl" secondAttribute="leading" constant="20" id="wsx-pt-frK"/>
@@ -76,6 +86,7 @@
                     </view>
                     <connections>
                         <outlet property="btnLogin" destination="mI7-IX-xn5" id="CO0-hB-YLm"/>
+                        <outlet property="loadingActivity" destination="7eH-Kx-bhF" id="IxJ-ql-Ryf"/>
                         <outlet property="loginTextField" destination="c8C-rj-q3l" id="kGH-SX-O68"/>
                         <outlet property="passwordTextField" destination="EvV-ns-TL8" id="NAb-qa-7sd"/>
                     </connections>

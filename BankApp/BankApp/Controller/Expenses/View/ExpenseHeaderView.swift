@@ -28,7 +28,6 @@ final class ExpenseHeaderView: UIView {
         label.font = UIFont(font: FontFamily.Helvetica.light, size: 25)
         label.textColor = .white
         label.textAlignment = .right
-        label.text = "José da Silva teste"
         return label
     }()
     
@@ -48,7 +47,6 @@ final class ExpenseHeaderView: UIView {
         label.font = UIFont(font: FontFamily.Helvetica.light, size: 25)
         label.textColor = .white
         label.textAlignment = .right
-        label.text = "2050 / 01.11122-4"
         return label
     }()
     
@@ -68,7 +66,6 @@ final class ExpenseHeaderView: UIView {
         label.font = UIFont(font: FontFamily.Helvetica.light, size: 25)
         label.textColor = .white
         label.textAlignment = .right
-        label.text = "R$1.000,00"
         return label
     }()
     
@@ -78,16 +75,24 @@ final class ExpenseHeaderView: UIView {
         return image
     }()
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, userAccount: UserAccount?) {
         super.init(frame: frame)
         setupViews()
+        configureView(userAccount: userAccount)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func configureView(userAccount: UserAccount?) {
+        guard let userAccount = userAccount else { return }
+        self.nameAccountLabel.text = userAccount.name
+        self.numberAccountLabel.text = "\(userAccount.bankAccount) / \(userAccount.agency.maskAgency())"
+        self.valueAccountLabel.text = userAccount.balance.toPriceFormatted()
+    }
 }
+
 extension ExpenseHeaderView: CodeViewProtocol {
     
     func buildViewHierarchy() {
