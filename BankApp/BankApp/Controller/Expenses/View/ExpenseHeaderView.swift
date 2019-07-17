@@ -106,7 +106,12 @@ extension ExpenseHeaderView: CodeViewProtocol {
                               bottom: bottomAnchor,
                               trailing: trailingAnchor,
                               insets: .init(top: 0, left: 0, bottom: 0, right: 0))
-        backGroundView.anchor(height: 220)
+        
+        iconShare.anchor(top: topAnchor,
+                         trailing: trailingAnchor,
+                         insets: .init(top: 20, left: 0, bottom: 0, right: 20))
+        
+        iconShare.anchor(height: 27.0, width: 27.0)
         
         nameAccountLabel.anchor(top: backGroundView.topAnchor,
                           leading: backGroundView.leadingAnchor,
@@ -126,13 +131,9 @@ extension ExpenseHeaderView: CodeViewProtocol {
         
         valueAccountLabel.anchor(top: titleValueLabel.bottomAnchor,
                                  leading: backGroundView.leadingAnchor,
-                                 insets: .init(top: 10, left: 20, bottom: 0, right: 0))
-        
-        iconShare.anchor(top: topAnchor,
-                         trailing: trailingAnchor,
-                         insets: .init(top: 20, left: 0, bottom: 0, right: 20))
-        
-        iconShare.anchor(height: 27.0, width: 27.0)
+                                 bottom: backGroundView.bottomAnchor,
+                                 insets: .init(top: 10, left: 20, bottom: 20, right: 0))
+       
     }
     
 }
