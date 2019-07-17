@@ -55,6 +55,19 @@
 		B276F6F422DE5A93003AF2CE /* Helvetica-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6ED22DE5A06003AF2CE /* Helvetica-Black.otf */; };
 		B276F6F522DE5A93003AF2CE /* Helvetica-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6EC22DE5A06003AF2CE /* Helvetica-Light.otf */; };
 		B276F6F622DE5A93003AF2CE /* Helvetica-Narrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = B276F6EE22DE5A06003AF2CE /* Helvetica-Narrow.otf */; };
+		B278395122DE687D005423EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278395022DE687D005423EF /* Coordinator.swift */; };
+		B278395422DE6898005423EF /* ControllerProtocol+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278395322DE6898005423EF /* ControllerProtocol+UIKit.swift */; };
+		B278395622DE68B0005423EF /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278395522DE68B0005423EF /* ControllerProtocol.swift */; };
+		B278395922DE68D5005423EF /* Presentable+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278395822DE68D5005423EF /* Presentable+UIKit.swift */; };
+		B278395B22DE68E9005423EF /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278395A22DE68E9005423EF /* Presentable.swift */; };
+		B278395E22DE6901005423EF /* NavigationRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278395D22DE6901005423EF /* NavigationRouterProtocol.swift */; };
+		B278396022DE6912005423EF /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278395F22DE6912005423EF /* NavigationRouter.swift */; };
+		B278396222DE6923005423EF /* TabNavigationRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396122DE6923005423EF /* TabNavigationRouterProtocol.swift */; };
+		B278396422DE6934005423EF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396322DE6934005423EF /* Router.swift */; };
+		B278396622DE6945005423EF /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396522DE6945005423EF /* RouterProtocol.swift */; };
+		B278396822DE6956005423EF /* TabNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396722DE6956005423EF /* TabNavigationRouter.swift */; };
+		B278396B22DE6A4B005423EF /* ExpenseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */; };
+		B278396D22DE6AE0005423EF /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */; };
 		FC19FAF9AE124357011F9B38 /* Pods_BankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +149,19 @@
 		B276F6EF22DE5A07003AF2CE /* Helvetica Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Bold.ttf"; sourceTree = "<group>"; };
 		B276F6F122DE5A36003AF2CE /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		B276F6F822DE6344003AF2CE /* Helvetica-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Normal.ttf"; sourceTree = "<group>"; };
+		B278395022DE687D005423EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B278395322DE6898005423EF /* ControllerProtocol+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerProtocol+UIKit.swift"; sourceTree = "<group>"; };
+		B278395522DE68B0005423EF /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
+		B278395822DE68D5005423EF /* Presentable+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presentable+UIKit.swift"; sourceTree = "<group>"; };
+		B278395A22DE68E9005423EF /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		B278395D22DE6901005423EF /* NavigationRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouterProtocol.swift; sourceTree = "<group>"; };
+		B278395F22DE6912005423EF /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		B278396122DE6923005423EF /* TabNavigationRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationRouterProtocol.swift; sourceTree = "<group>"; };
+		B278396322DE6934005423EF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B278396522DE6945005423EF /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		B278396722DE6956005423EF /* TabNavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationRouter.swift; sourceTree = "<group>"; };
+		B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCoordinator.swift; sourceTree = "<group>"; };
+		B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +230,8 @@
 		B2033D0522DCB0BB00B79379 /* BankApp */ = {
 			isa = PBXGroup;
 			children = (
+				B278396922DE6A1F005423EF /* Flow */,
+				B278394F22DE6867005423EF /* Coordinator */,
 				B232D95522DCC7DB0052FB14 /* Controller */,
 				B2033D5622DCB8E200B79379 /* Commons */,
 				B2033D4922DCB5A900B79379 /* Services */,
@@ -445,6 +473,57 @@
 				B232D97B22DD349D0052FB14 /* ExpenseProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B278394F22DE6867005423EF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B278395C22DE68F6005423EF /* Router */,
+				B278395722DE68C2005423EF /* Presentable */,
+				B278395222DE6888005423EF /* Controller */,
+				B278395022DE687D005423EF /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B278395222DE6888005423EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B278395322DE6898005423EF /* ControllerProtocol+UIKit.swift */,
+				B278395522DE68B0005423EF /* ControllerProtocol.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B278395722DE68C2005423EF /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				B278395822DE68D5005423EF /* Presentable+UIKit.swift */,
+				B278395A22DE68E9005423EF /* Presentable.swift */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		B278395C22DE68F6005423EF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B278395D22DE6901005423EF /* NavigationRouterProtocol.swift */,
+				B278395F22DE6912005423EF /* NavigationRouter.swift */,
+				B278396122DE6923005423EF /* TabNavigationRouterProtocol.swift */,
+				B278396322DE6934005423EF /* Router.swift */,
+				B278396522DE6945005423EF /* RouterProtocol.swift */,
+				B278396722DE6956005423EF /* TabNavigationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B278396922DE6A1F005423EF /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */,
+				B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		F38B29D97C867E3AA26DFF96 /* Pods */ = {
@@ -707,36 +786,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				B232D96322DCE5230052FB14 /* UIViewController+Extensions.swift in Sources */,
+				B278396B22DE6A4B005423EF /* ExpenseCoordinator.swift in Sources */,
 				B232D97922DD345B0052FB14 /* ExpensePresenter.swift in Sources */,
 				B232D95F22DCE3B00052FB14 /* UIView+Constraints.swift in Sources */,
 				B2033D5522DCB68F00B79379 /* ServiceRouter.swift in Sources */,
+				B278395E22DE6901005423EF /* NavigationRouterProtocol.swift in Sources */,
 				B232D95822DCC7F20052FB14 /* ExpensesViewCell.swift in Sources */,
 				B232D94322DCBCDF0052FB14 /* Assets.swift in Sources */,
 				B232D94D22DCC3080052FB14 /* ExpenseService.swift in Sources */,
 				B232D95D22DCE2D90052FB14 /* CodeViewProtocol.swift in Sources */,
 				B232D97122DD28810052FB14 /* Strings.swift in Sources */,
+				B278396622DE6945005423EF /* RouterProtocol.swift in Sources */,
 				B276F6E022DE242D003AF2CE /* Double+Extensions.swift in Sources */,
 				B2033D5322DCB67300B79379 /* ServiceClient.swift in Sources */,
 				B2033D5122DCB65800B79379 /* ServiceError.swift in Sources */,
 				B2033D0922DCB0BB00B79379 /* ViewController.swift in Sources */,
+				B278396022DE6912005423EF /* NavigationRouter.swift in Sources */,
 				B2033D5C22DCB96200B79379 /* Environment.swift in Sources */,
 				B232D96122DCE44F0052FB14 /* ListExpensesViewController.swift in Sources */,
 				B2033D0722DCB0BB00B79379 /* AppDelegate.swift in Sources */,
+				B278395622DE68B0005423EF /* ControllerProtocol.swift in Sources */,
 				B232D95222DCC3810052FB14 /* Expense.swift in Sources */,
 				B276F6E222DE42C8003AF2CE /* TitleHeaderView.swift in Sources */,
 				B276F6DE22DE1869003AF2CE /* Region+Extensions.swift in Sources */,
+				B278395922DE68D5005423EF /* Presentable+UIKit.swift in Sources */,
 				B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */,
 				B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */,
+				B278396D22DE6AE0005423EF /* ApplicationCoordinator.swift in Sources */,
+				B278395B22DE68E9005423EF /* Presentable.swift in Sources */,
+				B278396222DE6923005423EF /* TabNavigationRouterProtocol.swift in Sources */,
 				B232D97C22DD349D0052FB14 /* ExpenseProtocol.swift in Sources */,
 				B232D94522DCBCF90052FB14 /* Colors.swift in Sources */,
 				B2033D4D22DCB5D900B79379 /* ServiceResult.swift in Sources */,
+				B278396822DE6956005423EF /* TabNavigationRouter.swift in Sources */,
+				B278396422DE6934005423EF /* Router.swift in Sources */,
 				B276F6F222DE5A37003AF2CE /* Fonts.swift in Sources */,
 				B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */,
 				B232D95422DCC4330052FB14 /* ExpenseRouter.swift in Sources */,
+				B278395122DE687D005423EF /* Coordinator.swift in Sources */,
 				B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */,
 				B232D96B22DCF7860052FB14 /* UITableView+Extensions.swift in Sources */,
 				B2033D5F22DCBA1100B79379 /* Codable+Extensions.swift in Sources */,
 				B2033D4F22DCB5F400B79379 /* ServiceClientProtocol.swift in Sources */,
+				B278395422DE6898005423EF /* ControllerProtocol+UIKit.swift in Sources */,
 				B276F6DC22DE163B003AF2CE /* String+Extensions.swift in Sources */,
 				B232D95022DCC33F0052FB14 /* StatementList.swift in Sources */,
 				B232D96522DCE9740052FB14 /* ExpenseHeaderView.swift in Sources */,
