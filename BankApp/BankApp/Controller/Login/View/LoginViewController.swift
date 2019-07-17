@@ -30,6 +30,10 @@ final class LoginViewController: UIViewController {
         configLayout()
     }
     
+    static func instantiate() -> LoginViewController {
+        return UIStoryboard(name: "LoginViewController", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+    }
+    
     private func configLayout() {
         #if DEBUG
             self.loginTextField.text = "test_user@gmail.com"

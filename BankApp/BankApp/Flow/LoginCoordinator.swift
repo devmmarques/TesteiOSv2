@@ -15,8 +15,9 @@ final class LoginCoordinator: Coordinator {
 
     required override init() {
         
-        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        let viewController = LoginViewController.instantiate()
         router = Router(rootController: viewController)
         super.init()
         viewController.didFinishLogin = { [weak self] login in
