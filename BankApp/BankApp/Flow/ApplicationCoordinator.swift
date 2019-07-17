@@ -18,11 +18,20 @@ final class ApplicationCoordinator: Coordinator {
     }
     
     override func start() {
-        let navigationController = UINavigationController()
-        let coordinator = ExpenseCoordinator(router: AnyNavigationRouter(NavigationRouter(rootController: navigationController)))
-        add(child: coordinator)
         
-        coordinator.start()
-        router.setRoot(coordinator, animated: true)
+        let loginCoordinator = LoginCoordinator()
+        add(child: loginCoordinator)
+        loginCoordinator.finishflow = { [weak self] login in
+            self?.remove(child: loginCoordinator)
+            
+            let navigationController = UINavigationController()
+            let expenseCoordinatorr = ExpenseCoordinator(router: AnyNavigationRouter(NavigationRouter(rootController: navigationController)), userAccount: login)
+            self?.add(child: expenseCoordinatorr)
+            expenseCoordinatorr.start()
+            
+            self?.router.setRoot(expenseCoordinatorr, animated: true)
+        }
+        loginCoordinator.start()
+        router.setRoot(loginCoordinator, animated: true)
     }
 }

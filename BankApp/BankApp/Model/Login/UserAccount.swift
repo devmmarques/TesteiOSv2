@@ -15,3 +15,4 @@ struct UserAccount: Codable {
     let agency: String
     let balance: Double
 }
+

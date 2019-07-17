@@ -3,6 +3,8 @@
 "Balance" = "Saldo";
 "Recent" = "Recentes";
 "teste" = "teste";
+"error" = "Error";
+"errorUserPasswordInvalid" = "Usuário ou senha inválidos";
 "errorInternetDescription" = "Não foi possível carregar a página no momento";
 "errorUnexpectedDescription" = "Não foi possivel carregar a página no momento. Por favor, tente mais tarde.";
 "errorUnexpectedTitle" = "Erro inesperado";

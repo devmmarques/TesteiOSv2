@@ -28,6 +28,8 @@ final class ListExpensesViewController: UIViewController {
         return presenter
     }()
     
+    private let userAccount: UserAccount?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -56,7 +58,8 @@ final class ListExpensesViewController: UIViewController {
         tableView.register(ExpensesViewCell.self)
     }
     
-    init() {
+    init(userAccount: UserAccount?) {
+        self.userAccount = userAccount
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -114,6 +117,7 @@ extension ListExpensesViewController: UITableViewDataSource {
             cell.setup(expense: expenseValue)
             return cell
         case let .error(error):
+            print(error)
             return UITableViewCell()
             
         case .loading:
@@ -123,7 +127,7 @@ extension ListExpensesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
-            let header = ExpenseHeaderView(frame: .zero)
+            let header = ExpenseHeaderView(frame: .zero, userAccount: self.userAccount)
             return header
         } else {
             let titleHeader = TitleHeaderView(frame: .zero, title: L10n.recent, colorBackGround: ColorName.colorBackgroundTableView.color)

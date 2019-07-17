@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2881812B48D5A24F294C1271 /* Pods_BankAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9AE9D175DE623089035E60 /* Pods_BankAppTests.framework */; };
+		1BD1BAC8A420F5CA49F37AF9 /* Pods_BankApp_BankAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6592A6B30987A42BC604B22F /* Pods_BankApp_BankAppTests.framework */; };
 		4D008247007A78FE500DAE88 /* Pods_BankApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B88D5A07FCB2640561C2F59 /* Pods_BankApp.framework */; };
+		7656F0268641D8C3B808B124 /* Pods_BankApp_BankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA7AE7A5FB816B152500999 /* Pods_BankApp_BankAppUITests.framework */; };
 		B2033D0722DCB0BB00B79379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D0622DCB0BB00B79379 /* AppDelegate.swift */; };
-		B2033D0922DCB0BB00B79379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D0822DCB0BB00B79379 /* ViewController.swift */; };
-		B2033D0C22DCB0BB00B79379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2033D0A22DCB0BB00B79379 /* Main.storyboard */; };
 		B2033D0E22DCB0BD00B79379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2033D0D22DCB0BD00B79379 /* Assets.xcassets */; };
 		B2033D1122DCB0BD00B79379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2033D0F22DCB0BD00B79379 /* LaunchScreen.storyboard */; };
 		B2033D1C22DCB0BD00B79379 /* BankAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D1B22DCB0BD00B79379 /* BankAppTests.swift */; };
@@ -19,20 +18,31 @@
 		B2033D3D22DCB25E00B79379 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = B2033D3C22DCB25E00B79379 /* Colors.json */; };
 		B2033D4522DCB46F00B79379 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = B2033D4422DCB46F00B79379 /* swiftgen.yml */; };
 		B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D4722DCB55100B79379 /* UserAccount.swift */; };
-		B2033D4D22DCB5D900B79379 /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D4C22DCB5D900B79379 /* ServiceResult.swift */; };
-		B2033D4F22DCB5F400B79379 /* ServiceClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D4E22DCB5F400B79379 /* ServiceClientProtocol.swift */; };
-		B2033D5122DCB65800B79379 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D5022DCB65800B79379 /* ServiceError.swift */; };
-		B2033D5322DCB67300B79379 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D5222DCB67300B79379 /* ServiceClient.swift */; };
-		B2033D5522DCB68F00B79379 /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D5422DCB68F00B79379 /* ServiceRouter.swift */; };
-		B2033D5C22DCB96200B79379 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D5B22DCB96200B79379 /* Environment.swift */; };
 		B2033D5F22DCBA1100B79379 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2033D5E22DCBA1100B79379 /* Codable+Extensions.swift */; };
 		B2033D6122DCBAB500B79379 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2033D6022DCBAB500B79379 /* Localizable.strings */; };
+		B2064FA922DF675B0013F27C /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2064FA822DF675B0013F27C /* LoginViewController.storyboard */; };
+		B2064FAB22DF6B290013F27C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FAA22DF6B290013F27C /* LoginViewController.swift */; };
+		B2064FAD22DF6E780013F27C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FAC22DF6E780013F27C /* LoginPresenter.swift */; };
+		B2064FAF22DF6EAA0013F27C /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FAE22DF6EAA0013F27C /* LoginViewProtocol.swift */; };
+		B2064FB522DF823F0013F27C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FB422DF823F0013F27C /* LoginService.swift */; };
+		B2064FB822DF82BB0013F27C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FB722DF82BB0013F27C /* LoginResponse.swift */; };
+		B2064FBC22DF85AF0013F27C /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FBB22DF85AF0013F27C /* LoginError.swift */; };
+		B2064FBF22DF8B960013F27C /* BaseWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FBE22DF8B960013F27C /* BaseWebservice.swift */; };
+		B2064FC122DF8BC30013F27C /* DefaultSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FC022DF8BC30013F27C /* DefaultSessionManager.swift */; };
+		B2064FC322DF8BD80013F27C /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FC222DF8BD80013F27C /* HTTPStatusCode.swift */; };
+		B2064FC622DF8BEC0013F27C /* ParamsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FC522DF8BEC0013F27C /* ParamsBuilder.swift */; };
+		B2064FC822DF8BFC0013F27C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FC722DF8BFC0013F27C /* HTTPMethod.swift */; };
+		B2064FCA22DF8C0E0013F27C /* WebserviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FC922DF8C0E0013F27C /* WebserviceError.swift */; };
+		B2064FCC22DF8C230013F27C /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FCB22DF8C230013F27C /* Webservice.swift */; };
+		B2064FCF22DF8C950013F27C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FCE22DF8C950013F27C /* EmptyState.swift */; };
+		B2064FD222DF8D260013F27C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FD122DF8D260013F27C /* API.swift */; };
+		B2064FD422DF8D510013F27C /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FD322DF8D510013F27C /* Environment.swift */; };
+		B2064FD622DF8D690013F27C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FD522DF8D690013F27C /* Configuration.swift */; };
 		B232D94322DCBCDF0052FB14 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94222DCBCDF0052FB14 /* Assets.swift */; };
 		B232D94522DCBCF90052FB14 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94422DCBCF90052FB14 /* Colors.swift */; };
 		B232D94D22DCC3080052FB14 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94C22DCC3080052FB14 /* ExpenseService.swift */; };
 		B232D95022DCC33F0052FB14 /* StatementList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D94F22DCC33F0052FB14 /* StatementList.swift */; };
 		B232D95222DCC3810052FB14 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95122DCC3810052FB14 /* Expense.swift */; };
-		B232D95422DCC4330052FB14 /* ExpenseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95322DCC4330052FB14 /* ExpenseRouter.swift */; };
 		B232D95822DCC7F20052FB14 /* ExpensesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95722DCC7F20052FB14 /* ExpensesViewCell.swift */; };
 		B232D95D22DCE2D90052FB14 /* CodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95C22DCE2D90052FB14 /* CodeViewProtocol.swift */; };
 		B232D95F22DCE3B00052FB14 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232D95E22DCE3B00052FB14 /* UIView+Constraints.swift */; };
@@ -68,7 +78,16 @@
 		B278396822DE6956005423EF /* TabNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396722DE6956005423EF /* TabNavigationRouter.swift */; };
 		B278396B22DE6A4B005423EF /* ExpenseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */; };
 		B278396D22DE6AE0005423EF /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */; };
-		FC19FAF9AE124357011F9B38 /* Pods_BankAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */; };
+		B289963E22DF9178003D8C37 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289963D22DF9178003D8C37 /* Login.swift */; };
+		B289964022DFA605003D8C37 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289963F22DFA605003D8C37 /* LoginCoordinator.swift */; };
+		B289964322DFBA6B003D8C37 /* DefaultKeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289964222DFBA6B003D8C37 /* DefaultKeychainWrapper.swift */; };
+		B289964622DFBC06003D8C37 /* WebserviceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289964522DFBC06003D8C37 /* WebserviceSpec.swift */; };
+		B289964922DFBC64003D8C37 /* loginResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B289964822DFBC64003D8C37 /* loginResponse.json */; };
+		B289964B22DFBCC0003D8C37 /* LoginWebserviceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289964A22DFBCC0003D8C37 /* LoginWebserviceSpec.swift */; };
+		B289964E22DFBD04003D8C37 /* MockWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289964D22DFBD04003D8C37 /* MockWebservice.swift */; };
+		B289965122DFBFA4003D8C37 /* MockLoginWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289965022DFBFA4003D8C37 /* MockLoginWebservice.swift */; };
+		B289965222DFC0EA003D8C37 /* MockWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289964D22DFBD04003D8C37 /* MockWebservice.swift */; };
+		B289965522DFC18B003D8C37 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289965422DFC18B003D8C37 /* LoginViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,17 +108,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F7024A4DBB9EDB40D5AB8EB /* Pods-BankApp-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankApp-BankAppTests/Pods-BankApp-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1530658562EF56E77F8B30F5 /* Pods-BankAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppUITests.release.xcconfig"; path = "Target Support Files/Pods-BankAppUITests/Pods-BankAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1E9AE9D175DE623089035E60 /* Pods_BankAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA7AE7A5FB816B152500999 /* Pods_BankApp_BankAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankApp_BankAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8A1C66D78F398E233EC1A0 /* Pods-BankApp-BankAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp-BankAppUITests.release.xcconfig"; path = "Target Support Files/Pods-BankApp-BankAppUITests/Pods-BankApp-BankAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6282FBBD12C2A093BC137E73 /* Pods-BankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.release.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.release.xcconfig"; sourceTree = "<group>"; };
+		6592A6B30987A42BC604B22F /* Pods_BankApp_BankAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankApp_BankAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB45CD9B12FA4498F6397A4 /* Pods-BankApp-BankAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp-BankAppTests.release.xcconfig"; path = "Target Support Files/Pods-BankApp-BankAppTests/Pods-BankApp-BankAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8209A9595EB32F8DA5E75FBE /* Pods-BankAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.release.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B88D5A07FCB2640561C2F59 /* Pods_BankApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9DBF05714EEAEFBB5D418D /* Pods-BankAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppUITests/Pods-BankAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2033D0322DCB0BB00B79379 /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2033D0622DCB0BB00B79379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2033D0822DCB0BB00B79379 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2033D0B22DCB0BB00B79379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2033D0D22DCB0BD00B79379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2033D1022DCB0BD00B79379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2033D1222DCB0BD00B79379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,20 +132,31 @@
 		B2033D3C22DCB25E00B79379 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
 		B2033D4422DCB46F00B79379 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = "<group>"; };
 		B2033D4722DCB55100B79379 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
-		B2033D4C22DCB5D900B79379 /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
-		B2033D4E22DCB5F400B79379 /* ServiceClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClientProtocol.swift; sourceTree = "<group>"; };
-		B2033D5022DCB65800B79379 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
-		B2033D5222DCB67300B79379 /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
-		B2033D5422DCB68F00B79379 /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
-		B2033D5B22DCB96200B79379 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		B2033D5E22DCBA1100B79379 /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
 		B2033D6022DCBAB500B79379 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B2064FA822DF675B0013F27C /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		B2064FAA22DF6B290013F27C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B2064FAC22DF6E780013F27C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B2064FAE22DF6EAA0013F27C /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		B2064FB422DF823F0013F27C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		B2064FB722DF82BB0013F27C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		B2064FBB22DF85AF0013F27C /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		B2064FBE22DF8B960013F27C /* BaseWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebservice.swift; sourceTree = "<group>"; };
+		B2064FC022DF8BC30013F27C /* DefaultSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSessionManager.swift; sourceTree = "<group>"; };
+		B2064FC222DF8BD80013F27C /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		B2064FC522DF8BEC0013F27C /* ParamsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamsBuilder.swift; sourceTree = "<group>"; };
+		B2064FC722DF8BFC0013F27C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B2064FC922DF8C0E0013F27C /* WebserviceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceError.swift; sourceTree = "<group>"; };
+		B2064FCB22DF8C230013F27C /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		B2064FCE22DF8C950013F27C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		B2064FD122DF8D260013F27C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B2064FD322DF8D510013F27C /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		B2064FD522DF8D690013F27C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		B232D94222DCBCDF0052FB14 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		B232D94422DCBCF90052FB14 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B232D94C22DCC3080052FB14 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
 		B232D94F22DCC33F0052FB14 /* StatementList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementList.swift; sourceTree = "<group>"; };
 		B232D95122DCC3810052FB14 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
-		B232D95322DCC4330052FB14 /* ExpenseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRouter.swift; sourceTree = "<group>"; };
 		B232D95722DCC7F20052FB14 /* ExpensesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewCell.swift; sourceTree = "<group>"; };
 		B232D95C22DCE2D90052FB14 /* CodeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewProtocol.swift; sourceTree = "<group>"; };
 		B232D95E22DCE3B00052FB14 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
@@ -162,8 +193,18 @@
 		B278396722DE6956005423EF /* TabNavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationRouter.swift; sourceTree = "<group>"; };
 		B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCoordinator.swift; sourceTree = "<group>"; };
 		B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		B289963D22DF9178003D8C37 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B289963F22DFA605003D8C37 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		B289964222DFBA6B003D8C37 /* DefaultKeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeychainWrapper.swift; sourceTree = "<group>"; };
+		B289964522DFBC06003D8C37 /* WebserviceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceSpec.swift; sourceTree = "<group>"; };
+		B289964822DFBC64003D8C37 /* loginResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loginResponse.json; sourceTree = "<group>"; };
+		B289964A22DFBCC0003D8C37 /* LoginWebserviceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebserviceSpec.swift; sourceTree = "<group>"; };
+		B289964D22DFBD04003D8C37 /* MockWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebservice.swift; sourceTree = "<group>"; };
+		B289965022DFBFA4003D8C37 /* MockLoginWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginWebservice.swift; sourceTree = "<group>"; };
+		B289965422DFC18B003D8C37 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankAppTests/Pods-BankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC252EEA705650DD7E8777EC /* Pods-BankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp.debug.xcconfig"; path = "Target Support Files/Pods-BankApp/Pods-BankApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F82FB0D927EC870EA2AB8B8E /* Pods-BankApp-BankAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankApp-BankAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BankApp-BankAppUITests/Pods-BankApp-BankAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2881812B48D5A24F294C1271 /* Pods_BankAppTests.framework in Frameworks */,
+				1BD1BAC8A420F5CA49F37AF9 /* Pods_BankApp_BankAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC19FAF9AE124357011F9B38 /* Pods_BankAppUITests.framework in Frameworks */,
+				7656F0268641D8C3B808B124 /* Pods_BankApp_BankAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				8B88D5A07FCB2640561C2F59 /* Pods_BankApp.framework */,
-				1E9AE9D175DE623089035E60 /* Pods_BankAppTests.framework */,
-				0D5653E8736E07D7A9E13D40 /* Pods_BankAppUITests.framework */,
+				6592A6B30987A42BC604B22F /* Pods_BankApp_BankAppTests.framework */,
+				1EA7AE7A5FB816B152500999 /* Pods_BankApp_BankAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -230,6 +271,8 @@
 		B2033D0522DCB0BB00B79379 /* BankApp */ = {
 			isa = PBXGroup;
 			children = (
+				B2064FD022DF8D180013F27C /* Environment */,
+				B2064FBD22DF8A980013F27C /* Network */,
 				B278396922DE6A1F005423EF /* Flow */,
 				B278394F22DE6867005423EF /* Coordinator */,
 				B232D95522DCC7DB0052FB14 /* Controller */,
@@ -238,8 +281,6 @@
 				B2033D4622DCB52300B79379 /* Model */,
 				B2033D3422DCB1D400B79379 /* Resources */,
 				B2033D0622DCB0BB00B79379 /* AppDelegate.swift */,
-				B2033D0822DCB0BB00B79379 /* ViewController.swift */,
-				B2033D0A22DCB0BB00B79379 /* Main.storyboard */,
 				B2033D0F22DCB0BD00B79379 /* LaunchScreen.storyboard */,
 				B2033D1222DCB0BD00B79379 /* Info.plist */,
 			);
@@ -249,6 +290,7 @@
 		B2033D1A22DCB0BD00B79379 /* BankAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				B289964422DFBBF6003D8C37 /* Network */,
 				B2033D1B22DCB0BD00B79379 /* BankAppTests.swift */,
 				B2033D1D22DCB0BD00B79379 /* Info.plist */,
 			);
@@ -258,6 +300,8 @@
 		B2033D2522DCB0BD00B79379 /* BankAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B289965322DFC17B003D8C37 /* Components */,
+				B289964F22DFBF7C003D8C37 /* Network */,
 				B2033D2622DCB0BD00B79379 /* BankAppUITests.swift */,
 				B2033D2822DCB0BD00B79379 /* Info.plist */,
 			);
@@ -334,8 +378,8 @@
 		B2033D4622DCB52300B79379 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B232D94E22DCC3320052FB14 /* Report */,
-				B2033D4722DCB55100B79379 /* UserAccount.swift */,
+				B2064FB622DF82AC0013F27C /* Login */,
+				B232D94E22DCC3320052FB14 /* Expense */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,48 +387,20 @@
 		B2033D4922DCB5A900B79379 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B232D94B22DCC2FA0052FB14 /* Report */,
-				B2033D5A22DCB95700B79379 /* Util */,
-				B2033D4A22DCB5BD00B79379 /* ServiceClient */,
+				B2064FB122DF82080013F27C /* Login */,
+				B232D94B22DCC2FA0052FB14 /* Expense */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		B2033D4A22DCB5BD00B79379 /* ServiceClient */ = {
-			isa = PBXGroup;
-			children = (
-				B2033D4B22DCB5C800B79379 /* Core */,
-			);
-			path = ServiceClient;
-			sourceTree = "<group>";
-		};
-		B2033D4B22DCB5C800B79379 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				B2033D4C22DCB5D900B79379 /* ServiceResult.swift */,
-				B2033D4E22DCB5F400B79379 /* ServiceClientProtocol.swift */,
-				B2033D5022DCB65800B79379 /* ServiceError.swift */,
-				B2033D5222DCB67300B79379 /* ServiceClient.swift */,
-				B2033D5422DCB68F00B79379 /* ServiceRouter.swift */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		B2033D5622DCB8E200B79379 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				B2064FCD22DF8C890013F27C /* CustomView */,
 				B232D95B22DCE2C90052FB14 /* Util */,
 				B2033D5D22DCB9F500B79379 /* Extensions */,
 			);
 			path = Commons;
-			sourceTree = "<group>";
-		};
-		B2033D5A22DCB95700B79379 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				B2033D5B22DCB96200B79379 /* Environment.swift */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		B2033D5D22DCB9F500B79379 /* Extensions */ = {
@@ -403,27 +419,113 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B232D94B22DCC2FA0052FB14 /* Report */ = {
+		B2064FA422DF67250013F27C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B2064FA722DF673B0013F27C /* View */,
+				B2064FA622DF67350013F27C /* Presenter */,
+				B2064FA522DF672F0013F27C /* Protocol */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B2064FA522DF672F0013F27C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B2064FAE22DF6EAA0013F27C /* LoginViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B2064FA622DF67350013F27C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B2064FAC22DF6E780013F27C /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B2064FA722DF673B0013F27C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2064FA822DF675B0013F27C /* LoginViewController.storyboard */,
+				B2064FAA22DF6B290013F27C /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2064FB122DF82080013F27C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B2064FB422DF823F0013F27C /* LoginService.swift */,
+				B289963D22DF9178003D8C37 /* Login.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B2064FB622DF82AC0013F27C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B2033D4722DCB55100B79379 /* UserAccount.swift */,
+				B2064FB722DF82BB0013F27C /* LoginResponse.swift */,
+				B2064FBB22DF85AF0013F27C /* LoginError.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B2064FBD22DF8A980013F27C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B2064FBE22DF8B960013F27C /* BaseWebservice.swift */,
+				B2064FC022DF8BC30013F27C /* DefaultSessionManager.swift */,
+				B2064FC222DF8BD80013F27C /* HTTPStatusCode.swift */,
+				B2064FC522DF8BEC0013F27C /* ParamsBuilder.swift */,
+				B2064FC722DF8BFC0013F27C /* HTTPMethod.swift */,
+				B2064FC922DF8C0E0013F27C /* WebserviceError.swift */,
+				B2064FCB22DF8C230013F27C /* Webservice.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B2064FCD22DF8C890013F27C /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B2064FCE22DF8C950013F27C /* EmptyState.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		B2064FD022DF8D180013F27C /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				B2064FD122DF8D260013F27C /* API.swift */,
+				B2064FD322DF8D510013F27C /* Environment.swift */,
+				B2064FD522DF8D690013F27C /* Configuration.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		B232D94B22DCC2FA0052FB14 /* Expense */ = {
 			isa = PBXGroup;
 			children = (
 				B232D94C22DCC3080052FB14 /* ExpenseService.swift */,
-				B232D95322DCC4330052FB14 /* ExpenseRouter.swift */,
 			);
-			path = Report;
+			path = Expense;
 			sourceTree = "<group>";
 		};
-		B232D94E22DCC3320052FB14 /* Report */ = {
+		B232D94E22DCC3320052FB14 /* Expense */ = {
 			isa = PBXGroup;
 			children = (
 				B232D94F22DCC33F0052FB14 /* StatementList.swift */,
 				B232D95122DCC3810052FB14 /* Expense.swift */,
 			);
-			path = Report;
+			path = Expense;
 			sourceTree = "<group>";
 		};
 		B232D95522DCC7DB0052FB14 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B2064FA422DF67250013F27C /* Login */,
 				B232D95622DCC7E10052FB14 /* Expenses */,
 			);
 			path = Controller;
@@ -442,6 +544,7 @@
 		B232D95B22DCE2C90052FB14 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				B289964122DFBA5E003D8C37 /* Security */,
 				B232D95C22DCE2D90052FB14 /* CodeViewProtocol.swift */,
 			);
 			path = Util;
@@ -522,8 +625,60 @@
 			children = (
 				B278396A22DE6A4B005423EF /* ExpenseCoordinator.swift */,
 				B278396C22DE6AE0005423EF /* ApplicationCoordinator.swift */,
+				B289963F22DFA605003D8C37 /* LoginCoordinator.swift */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		B289964122DFBA5E003D8C37 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				B289964222DFBA6B003D8C37 /* DefaultKeychainWrapper.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		B289964422DFBBF6003D8C37 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B289964C22DFBCF7003D8C37 /* Utils */,
+				B289964722DFBC4C003D8C37 /* Login */,
+				B289964522DFBC06003D8C37 /* WebserviceSpec.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B289964722DFBC4C003D8C37 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B289964822DFBC64003D8C37 /* loginResponse.json */,
+				B289964A22DFBCC0003D8C37 /* LoginWebserviceSpec.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B289964C22DFBCF7003D8C37 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B289964D22DFBD04003D8C37 /* MockWebservice.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B289964F22DFBF7C003D8C37 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B289965022DFBFA4003D8C37 /* MockLoginWebservice.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B289965322DFC17B003D8C37 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B289965422DFC18B003D8C37 /* LoginViewControllerTests.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F38B29D97C867E3AA26DFF96 /* Pods */ = {
@@ -535,6 +690,10 @@
 				8209A9595EB32F8DA5E75FBE /* Pods-BankAppTests.release.xcconfig */,
 				9E9DBF05714EEAEFBB5D418D /* Pods-BankAppUITests.debug.xcconfig */,
 				1530658562EF56E77F8B30F5 /* Pods-BankAppUITests.release.xcconfig */,
+				0F7024A4DBB9EDB40D5AB8EB /* Pods-BankApp-BankAppTests.debug.xcconfig */,
+				6BB45CD9B12FA4498F6397A4 /* Pods-BankApp-BankAppTests.release.xcconfig */,
+				F82FB0D927EC870EA2AB8B8E /* Pods-BankApp-BankAppUITests.debug.xcconfig */,
+				3D8A1C66D78F398E233EC1A0 /* Pods-BankApp-BankAppUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -570,6 +729,7 @@
 				B2033D1322DCB0BD00B79379 /* Sources */,
 				B2033D1422DCB0BD00B79379 /* Frameworks */,
 				B2033D1522DCB0BD00B79379 /* Resources */,
+				2BA2E62D6D49CC4038F84457 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -589,6 +749,7 @@
 				B2033D1E22DCB0BD00B79379 /* Sources */,
 				B2033D1F22DCB0BD00B79379 /* Frameworks */,
 				B2033D2022DCB0BD00B79379 /* Resources */,
+				F525D8EF4F5CC1172C0846D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -655,9 +816,9 @@
 				B2033D4522DCB46F00B79379 /* swiftgen.yml in Resources */,
 				B2033D1122DCB0BD00B79379 /* LaunchScreen.storyboard in Resources */,
 				B2033D6122DCBAB500B79379 /* Localizable.strings in Resources */,
+				B2064FA922DF675B0013F27C /* LoginViewController.storyboard in Resources */,
 				B2033D3D22DCB25E00B79379 /* Colors.json in Resources */,
 				B2033D0E22DCB0BD00B79379 /* Assets.xcassets in Resources */,
-				B2033D0C22DCB0BB00B79379 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +826,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B289964922DFBC64003D8C37 /* loginResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +840,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2BA2E62D6D49CC4038F84457 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankApp-BankAppTests/Pods-BankApp-BankAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankApp-BankAppTests/Pods-BankApp-BankAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankApp-BankAppTests/Pods-BankApp-BankAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7BA5484AABD59E1F3F47D4CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -693,7 +872,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BankAppUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BankApp-BankAppUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -771,11 +950,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BankAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BankApp-BankAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F525D8EF4F5CC1172C0846D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankApp-BankAppUITests/Pods-BankApp-BankAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankApp-BankAppUITests/Pods-BankApp-BankAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankApp-BankAppUITests/Pods-BankApp-BankAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -785,30 +981,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2064FAD22DF6E780013F27C /* LoginPresenter.swift in Sources */,
 				B232D96322DCE5230052FB14 /* UIViewController+Extensions.swift in Sources */,
 				B278396B22DE6A4B005423EF /* ExpenseCoordinator.swift in Sources */,
+				B289963E22DF9178003D8C37 /* Login.swift in Sources */,
+				B2064FAF22DF6EAA0013F27C /* LoginViewProtocol.swift in Sources */,
 				B232D97922DD345B0052FB14 /* ExpensePresenter.swift in Sources */,
+				B2064FCF22DF8C950013F27C /* EmptyState.swift in Sources */,
+				B2064FD622DF8D690013F27C /* Configuration.swift in Sources */,
 				B232D95F22DCE3B00052FB14 /* UIView+Constraints.swift in Sources */,
-				B2033D5522DCB68F00B79379 /* ServiceRouter.swift in Sources */,
+				B2064FC322DF8BD80013F27C /* HTTPStatusCode.swift in Sources */,
 				B278395E22DE6901005423EF /* NavigationRouterProtocol.swift in Sources */,
 				B232D95822DCC7F20052FB14 /* ExpensesViewCell.swift in Sources */,
+				B2064FC122DF8BC30013F27C /* DefaultSessionManager.swift in Sources */,
 				B232D94322DCBCDF0052FB14 /* Assets.swift in Sources */,
 				B232D94D22DCC3080052FB14 /* ExpenseService.swift in Sources */,
 				B232D95D22DCE2D90052FB14 /* CodeViewProtocol.swift in Sources */,
 				B232D97122DD28810052FB14 /* Strings.swift in Sources */,
 				B278396622DE6945005423EF /* RouterProtocol.swift in Sources */,
+				B2064FAB22DF6B290013F27C /* LoginViewController.swift in Sources */,
 				B276F6E022DE242D003AF2CE /* Double+Extensions.swift in Sources */,
-				B2033D5322DCB67300B79379 /* ServiceClient.swift in Sources */,
-				B2033D5122DCB65800B79379 /* ServiceError.swift in Sources */,
-				B2033D0922DCB0BB00B79379 /* ViewController.swift in Sources */,
+				B289964022DFA605003D8C37 /* LoginCoordinator.swift in Sources */,
 				B278396022DE6912005423EF /* NavigationRouter.swift in Sources */,
-				B2033D5C22DCB96200B79379 /* Environment.swift in Sources */,
+				B2064FBC22DF85AF0013F27C /* LoginError.swift in Sources */,
+				B2064FC622DF8BEC0013F27C /* ParamsBuilder.swift in Sources */,
 				B232D96122DCE44F0052FB14 /* ListExpensesViewController.swift in Sources */,
 				B2033D0722DCB0BB00B79379 /* AppDelegate.swift in Sources */,
 				B278395622DE68B0005423EF /* ControllerProtocol.swift in Sources */,
 				B232D95222DCC3810052FB14 /* Expense.swift in Sources */,
 				B276F6E222DE42C8003AF2CE /* TitleHeaderView.swift in Sources */,
 				B276F6DE22DE1869003AF2CE /* Region+Extensions.swift in Sources */,
+				B2064FD422DF8D510013F27C /* Environment.swift in Sources */,
+				B289964322DFBA6B003D8C37 /* DefaultKeychainWrapper.swift in Sources */,
 				B278395922DE68D5005423EF /* Presentable+UIKit.swift in Sources */,
 				B232D96D22DCF7FE0052FB14 /* Identifier.swift in Sources */,
 				B232D97E22DD35AE0052FB14 /* ExpenseListCellType.swift in Sources */,
@@ -817,19 +1021,23 @@
 				B278396222DE6923005423EF /* TabNavigationRouterProtocol.swift in Sources */,
 				B232D97C22DD349D0052FB14 /* ExpenseProtocol.swift in Sources */,
 				B232D94522DCBCF90052FB14 /* Colors.swift in Sources */,
-				B2033D4D22DCB5D900B79379 /* ServiceResult.swift in Sources */,
+				B2064FCC22DF8C230013F27C /* Webservice.swift in Sources */,
 				B278396822DE6956005423EF /* TabNavigationRouter.swift in Sources */,
+				B2064FBF22DF8B960013F27C /* BaseWebservice.swift in Sources */,
 				B278396422DE6934005423EF /* Router.swift in Sources */,
 				B276F6F222DE5A37003AF2CE /* Fonts.swift in Sources */,
 				B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */,
-				B232D95422DCC4330052FB14 /* ExpenseRouter.swift in Sources */,
 				B278395122DE687D005423EF /* Coordinator.swift in Sources */,
+				B2064FC822DF8BFC0013F27C /* HTTPMethod.swift in Sources */,
+				B2064FB822DF82BB0013F27C /* LoginResponse.swift in Sources */,
 				B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */,
 				B232D96B22DCF7860052FB14 /* UITableView+Extensions.swift in Sources */,
 				B2033D5F22DCBA1100B79379 /* Codable+Extensions.swift in Sources */,
-				B2033D4F22DCB5F400B79379 /* ServiceClientProtocol.swift in Sources */,
+				B2064FD222DF8D260013F27C /* API.swift in Sources */,
+				B2064FCA22DF8C0E0013F27C /* WebserviceError.swift in Sources */,
 				B278395422DE6898005423EF /* ControllerProtocol+UIKit.swift in Sources */,
 				B276F6DC22DE163B003AF2CE /* String+Extensions.swift in Sources */,
+				B2064FB522DF823F0013F27C /* LoginService.swift in Sources */,
 				B232D95022DCC33F0052FB14 /* StatementList.swift in Sources */,
 				B232D96522DCE9740052FB14 /* ExpenseHeaderView.swift in Sources */,
 			);
@@ -839,7 +1047,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B289964E22DFBD04003D8C37 /* MockWebservice.swift in Sources */,
 				B2033D1C22DCB0BD00B79379 /* BankAppTests.swift in Sources */,
+				B289964622DFBC06003D8C37 /* WebserviceSpec.swift in Sources */,
+				B289964B22DFBCC0003D8C37 /* LoginWebserviceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +1058,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B289965522DFC18B003D8C37 /* LoginViewControllerTests.swift in Sources */,
+				B289965122DFBFA4003D8C37 /* MockLoginWebservice.swift in Sources */,
+				B289965222DFC0EA003D8C37 /* MockWebservice.swift in Sources */,
 				B2033D2722DCB0BD00B79379 /* BankAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -867,14 +1081,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B2033D0A22DCB0BB00B79379 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2033D0B22DCB0BB00B79379 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2033D0F22DCB0BD00B79379 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1040,7 +1246,7 @@
 		};
 		B2033D2F22DCB0BD00B79379 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9D2FF9E57FEE6D82CDDF7FA /* Pods-BankAppTests.debug.xcconfig */;
+			baseConfigurationReference = 0F7024A4DBB9EDB40D5AB8EB /* Pods-BankApp-BankAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1061,7 +1267,7 @@
 		};
 		B2033D3022DCB0BD00B79379 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8209A9595EB32F8DA5E75FBE /* Pods-BankAppTests.release.xcconfig */;
+			baseConfigurationReference = 6BB45CD9B12FA4498F6397A4 /* Pods-BankApp-BankAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1082,7 +1288,7 @@
 		};
 		B2033D3222DCB0BD00B79379 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E9DBF05714EEAEFBB5D418D /* Pods-BankAppUITests.debug.xcconfig */;
+			baseConfigurationReference = F82FB0D927EC870EA2AB8B8E /* Pods-BankApp-BankAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1102,7 +1308,7 @@
 		};
 		B2033D3322DCB0BD00B79379 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1530658562EF56E77F8B30F5 /* Pods-BankAppUITests.release.xcconfig */;
+			baseConfigurationReference = 3D8A1C66D78F398E233EC1A0 /* Pods-BankApp-BankAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
