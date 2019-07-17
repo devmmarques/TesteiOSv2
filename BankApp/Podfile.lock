@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.8.2)
   - KIF (3.7.8):
     - KIF/Core (= 3.7.8)
   - KIF/Core (3.7.8)
@@ -23,6 +24,7 @@ PODS:
   - SwiftGen (6.1.0)
 
 DEPENDENCIES:
+  - Alamofire
   - KIF
   - KIF/IdentifierTests
   - Nimble
@@ -33,6 +35,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - KIF
     - Nimble
     - OHHTTPStubs
@@ -41,6 +44,7 @@ SPEC REPOS:
     - SwiftGen
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   KIF: 52e1af1a78cf6fe4ec6777b14776f3dd2eccc32e
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
@@ -48,6 +52,6 @@ SPEC CHECKSUMS:
   SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
 
-PODFILE CHECKSUM: 296fe1f340a54e8dc16680b46893739cd419802e
+PODFILE CHECKSUM: 9ec26bc16013013b494e6a863b5784a99c70008a
 
 COCOAPODS: 1.7.4

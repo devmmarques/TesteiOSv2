@@ -9,27 +9,25 @@
 import Foundation
 
 protocol LoginServiceProtol  {
-    func doLogin(user: String, password: String, completion: @escaping (ServiceResult<UserResponse>) -> Void)
+    typealias LoginResult = Result<UserResponse, WebserviceError>
+    func doLogin(login: Login, completion: @escaping (LoginResult) -> Void)
 }
 
 final  class LoginService: NSObject, LoginServiceProtol {
     
-    private let serviceProtocol: ServiceClientProtocol
+    let service: Webservice
     
-    override init() {
-        self.serviceProtocol = ServiceClient()
+    init(service: Webservice = BaseWebservice()) {
+        self.service = service
     }
-    
-    init(service: ServiceClientProtocol) {
-        self.serviceProtocol = service
-    }
-    
-    func doLogin(user: String, password: String, completion: @escaping (ServiceResult<UserResponse>) -> Void) {
-        let router = LoginRouter.doLogin(user: user, password: password)
-        self.serviceProtocol.request(router: router) { (response: ServiceResult<UserResponse>) in
-            switch response {
-            case let .success(value):
-                completion(.success(value))
+
+    func doLogin(login: Login, completion: @escaping (LoginResult) -> Void) {
+        let parameters: [String: Any] = ["user": login.email,
+                                         "password": login.password]
+        service.request(urlString: API.Path.doLogin.value, method: .post, parameters: parameters, encoding: .json) { (result: LoginResult) in
+            switch result {
+            case let .success(login):
+                completion(.success(login))
             case let .failure(error):
                 completion(.failure(error))
             }

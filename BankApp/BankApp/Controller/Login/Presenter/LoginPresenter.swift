@@ -20,15 +20,7 @@ class LoginPresenter {
     }
     
     func doLogin(user: String, password: String) {
-        self.service.doLogin(user: user, password: password) { [weak self] result in
-//            guard let self = self else { return }
-            switch result {
-            case let .success(response):
-                print(response)
-            case .failure(let error):
-                print(error)
-            }
-        }
+        
     }
     
 }

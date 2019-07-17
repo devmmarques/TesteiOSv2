@@ -9,27 +9,28 @@
 import Foundation
 
 protocol ExpenseServiceProtol  {
-    func fetchExpense(id: Int, completion: @escaping (ServiceResult<StatementList>) -> Void)
+    typealias ExpenseResult = Result<StatementList, WebserviceError>
+    func fetchExpenses(idExpense: Int, completion: @escaping (ExpenseResult) -> Void)
 }
 
 final  class ExpenseService: NSObject, ExpenseServiceProtol {
     
-    private let serviceProtocol: ServiceClientProtocol
+    let service: Webservice
     
-    override init() {
-        self.serviceProtocol = ServiceClient()
+    init(service: Webservice = BaseWebservice()) {
+        self.service = service
     }
     
-    init(service: ServiceClientProtocol) {
-        self.serviceProtocol = service
-    }
-    
-    func fetchExpense(id: Int, completion: @escaping (ServiceResult<StatementList>) -> Void) {
-        let router = ExpenseRouter.fetchReport(id: id)
-        self.serviceProtocol.request(router: router) { (response: ServiceResult<StatementList>) in
-            switch response {
-            case let .success(value):
-                completion(.success(value))
+    func fetchExpenses(idExpense: Int, completion: @escaping (ExpenseResult) -> Void) {
+        let parameters: [String: Any] = ["": idExpense]
+        service.request(urlString: API.Path.expense.value, parameters: parameters) { (result: ExpenseResult) in
+            switch result {
+            case let .success(statement):
+                if statement.statementList.isEmpty {
+                   completion(.failure(.empty(.expense)))
+                } else {
+                    completion(.success(statement))
+                }
             case let .failure(error):
                 completion(.failure(error))
             }

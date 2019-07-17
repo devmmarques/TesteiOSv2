@@ -25,17 +25,7 @@ final class ExpensePresenter {
     }
     
     func fetchExpenses() {
-        self.service.fetchExpense(id: 1){ [weak self] result in
-            guard let self = self else { return }
-            switch result {
-            case let .success(response):
-                self.allExpenses = response.statementList.map {
-                    return ExpenseListCellType.cell($0)
-                }
-            case .failure(let error):
-                print(error)
-            }
-        }
+     
     }
 }
 
