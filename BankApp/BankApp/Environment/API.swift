@@ -11,7 +11,7 @@ import Foundation
 struct API {
     enum Path {
         case doLogin
-        case expense
+        case expense(id: Int)
         
         var value: String {
             let baseURL = Environment.current.baseURLString
@@ -19,8 +19,8 @@ struct API {
             switch self {
             case .doLogin:
                 return "\(baseURL)/api/login"
-            case .expense:
-                return "\(baseURL)api/statements/"
+            case .expense(let id):
+                return "\(baseURL)/api/statements/\(id)"
             }
         }
     }

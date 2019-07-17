@@ -34,15 +34,15 @@ struct BaseWebservice: Webservice {
             return completion(.failure(.malformedURL))
         }
         
-//        var alamofireHeaders = headers
-//        alamofireHeaders["BrMalls-Subscription-Key-Backend"] = "493bf92c35504033aa81433315ae4499"
+        var alamofireHeaders = headers
+        alamofireHeaders["Content-Type"] = "application/x-www-form-urlencoded"
         
         let httpMethod = alamofireMethod(with: method)
         
         let request = manager.request(url, method: httpMethod,
                                       parameters: parameters,
                                       encoding: encoding.alamofireEncoding,
-                                      headers: headers)
+                                      headers: alamofireHeaders)
         
         request
             .validate(statusCode: 200..<300)

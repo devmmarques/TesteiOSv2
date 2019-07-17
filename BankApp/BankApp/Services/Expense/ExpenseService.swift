@@ -22,8 +22,8 @@ final  class ExpenseService: NSObject, ExpenseServiceProtol {
     }
     
     func fetchExpenses(idExpense: Int, completion: @escaping (ExpenseResult) -> Void) {
-        let parameters: [String: Any] = ["": idExpense]
-        service.request(urlString: API.Path.expense.value, parameters: parameters) { (result: ExpenseResult) in
+        let api = API.Path.expense(id: idExpense).value
+        service.request(urlString: api) { (result: ExpenseResult) in
             switch result {
             case let .success(statement):
                 if statement.statementList.isEmpty {

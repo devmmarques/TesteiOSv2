@@ -17,12 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-//        let router = Router(rootController: self.window!)
-//        applicationCoordinator = ApplicationCoordinator(router: router)
-//        applicationCoordinator?.start()
-        self.window?.rootViewController = controller
+//        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
+//        let controller = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        let router = Router(rootController: self.window!)
+        applicationCoordinator = ApplicationCoordinator(router: router)
+        applicationCoordinator?.start()
+//        self.window?.rootViewController = controller
         self.window?.makeKeyAndVisible()
         return true
     }
