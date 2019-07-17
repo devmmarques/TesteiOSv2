@@ -114,6 +114,7 @@ extension ListExpensesViewController: UITableViewDataSource {
             cell.setup(expense: expenseValue)
             return cell
         case let .error(error):
+            print(error)
             return UITableViewCell()
             
         case .loading:
