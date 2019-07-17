@@ -10,17 +10,23 @@ import Foundation
 
 class LoginPresenter {
     
-    private let viewProtocol: LoginProtocol
-    private let service: LoginService
+    var loginService: LoginServiceProtol
+    var viewProtocol: LoginViewProtocol?
     
-    
-    init(viewProtocol: LoginProtocol, serviceAPI: LoginService) {
-        self.viewProtocol = viewProtocol
-        self.service = serviceAPI
+    init(loginService: LoginServiceProtol = LoginService()) {
+        self.loginService = loginService
     }
     
     func doLogin(user: String, password: String) {
-        
+        let login = Login(email: user, password: password)
+        self.loginService.doLogin(login: login) { [weak self] result in
+            switch result {
+            case let .success(login):
+                print(login)
+            case let.failure(error):
+                print(error)
+            }
+        }
     }
     
 }

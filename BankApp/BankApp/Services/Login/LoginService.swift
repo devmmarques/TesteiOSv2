@@ -9,7 +9,7 @@
 import Foundation
 
 protocol LoginServiceProtol  {
-    typealias LoginResult = Result<UserResponse, WebserviceError>
+    typealias LoginResult = Result<LoginResponse, WebserviceError>
     func doLogin(login: Login, completion: @escaping (LoginResult) -> Void)
 }
 

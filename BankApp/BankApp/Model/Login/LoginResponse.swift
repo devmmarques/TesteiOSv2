@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserResponse: Codable {
+struct LoginResponse: Codable {
     let userAccount: UserAccount
-    let error: LoginError?
+//    let error: LoginError?
 }

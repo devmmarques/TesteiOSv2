@@ -17,9 +17,11 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     
     private lazy var presenter: LoginPresenter = {
-        let presenter = LoginPresenter(viewProtocol: self, serviceAPI: LoginService())
+        let presenter = LoginPresenter(loginService: LoginService())
+        presenter.viewProtocol = self
         return presenter
     }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +30,25 @@ final class LoginViewController: UIViewController {
     
     
     private func configLayout() {
+        
+        #if DEBUG
+            self.loginTextField.text = "test_user"
+            self.passwordTextField.text = "Test@1"
+        #endif
         btnLogin.layer.cornerRadius = 7.0
         btnLogin.applyCellShadow(color: ColorName.colorBackgroundHeader.color, radius: 5.0, opacity: 0.3)
     }
     
     
     @IBAction func doLogin(_ sender: UIButton) {
-        guard let user = self.loginTextField.text else { return }
-        guard let password = self.passwordTextField.text else { return }
+        guard let user = loginTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
         presenter.doLogin(user: user, password: password)
+        
     }
 }
 
-extension LoginViewController: LoginProtocol {
+extension LoginViewController: LoginViewProtocol {
     
     func success() {
       

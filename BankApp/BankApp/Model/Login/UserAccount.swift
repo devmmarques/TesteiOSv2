@@ -14,4 +14,13 @@ struct UserAccount: Codable {
     let bankAccount: String
     let agency: String
     let balance: Double
+    
+    
+    private enum CodingKeys: String, CodingKey {
+        case userId = "userId"
+        case name = "name"
+        case bankAccount = "bankAccount"
+        case agency = "agency"
+        case balance = "balance"
+    }
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Marco Henrique Maia Marques. All rights reserved.
 //
 
-protocol LoginProtocol: AnyObject {
+protocol LoginViewProtocol: AnyObject {
     func success()
     func showLoading()
     func dismissLoading()

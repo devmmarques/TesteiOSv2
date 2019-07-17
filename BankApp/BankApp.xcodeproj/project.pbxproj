@@ -23,9 +23,9 @@
 		B2064FA922DF675B0013F27C /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2064FA822DF675B0013F27C /* LoginViewController.storyboard */; };
 		B2064FAB22DF6B290013F27C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FAA22DF6B290013F27C /* LoginViewController.swift */; };
 		B2064FAD22DF6E780013F27C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FAC22DF6E780013F27C /* LoginPresenter.swift */; };
-		B2064FAF22DF6EAA0013F27C /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FAE22DF6EAA0013F27C /* LoginProtocol.swift */; };
+		B2064FAF22DF6EAA0013F27C /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FAE22DF6EAA0013F27C /* LoginViewProtocol.swift */; };
 		B2064FB522DF823F0013F27C /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FB422DF823F0013F27C /* LoginService.swift */; };
-		B2064FB822DF82BB0013F27C /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FB722DF82BB0013F27C /* UserResponse.swift */; };
+		B2064FB822DF82BB0013F27C /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FB722DF82BB0013F27C /* LoginResponse.swift */; };
 		B2064FBC22DF85AF0013F27C /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FBB22DF85AF0013F27C /* LoginError.swift */; };
 		B2064FBF22DF8B960013F27C /* BaseWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FBE22DF8B960013F27C /* BaseWebservice.swift */; };
 		B2064FC122DF8BC30013F27C /* DefaultSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064FC022DF8BC30013F27C /* DefaultSessionManager.swift */; };
@@ -128,9 +128,9 @@
 		B2064FA822DF675B0013F27C /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		B2064FAA22DF6B290013F27C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B2064FAC22DF6E780013F27C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		B2064FAE22DF6EAA0013F27C /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		B2064FAE22DF6EAA0013F27C /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		B2064FB422DF823F0013F27C /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
-		B2064FB722DF82BB0013F27C /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		B2064FB722DF82BB0013F27C /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		B2064FBB22DF85AF0013F27C /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		B2064FBE22DF8B960013F27C /* BaseWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebservice.swift; sourceTree = "<group>"; };
 		B2064FC022DF8BC30013F27C /* DefaultSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSessionManager.swift; sourceTree = "<group>"; };
@@ -412,7 +412,7 @@
 		B2064FA522DF672F0013F27C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				B2064FAE22DF6EAA0013F27C /* LoginProtocol.swift */,
+				B2064FAE22DF6EAA0013F27C /* LoginViewProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				B2033D4722DCB55100B79379 /* UserAccount.swift */,
-				B2064FB722DF82BB0013F27C /* UserResponse.swift */,
+				B2064FB722DF82BB0013F27C /* LoginResponse.swift */,
 				B2064FBB22DF85AF0013F27C /* LoginError.swift */,
 			);
 			path = Login;
@@ -911,7 +911,7 @@
 				B232D96322DCE5230052FB14 /* UIViewController+Extensions.swift in Sources */,
 				B278396B22DE6A4B005423EF /* ExpenseCoordinator.swift in Sources */,
 				B289963E22DF9178003D8C37 /* Login.swift in Sources */,
-				B2064FAF22DF6EAA0013F27C /* LoginProtocol.swift in Sources */,
+				B2064FAF22DF6EAA0013F27C /* LoginViewProtocol.swift in Sources */,
 				B232D97922DD345B0052FB14 /* ExpensePresenter.swift in Sources */,
 				B2064FCF22DF8C950013F27C /* EmptyState.swift in Sources */,
 				B2064FD622DF8D690013F27C /* Configuration.swift in Sources */,
@@ -953,7 +953,7 @@
 				B2033D4822DCB55100B79379 /* UserAccount.swift in Sources */,
 				B278395122DE687D005423EF /* Coordinator.swift in Sources */,
 				B2064FC822DF8BFC0013F27C /* HTTPMethod.swift in Sources */,
-				B2064FB822DF82BB0013F27C /* UserResponse.swift in Sources */,
+				B2064FB822DF82BB0013F27C /* LoginResponse.swift in Sources */,
 				B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */,
 				B232D96B22DCF7860052FB14 /* UITableView+Extensions.swift in Sources */,
 				B2033D5F22DCBA1100B79379 /* Codable+Extensions.swift in Sources */,
