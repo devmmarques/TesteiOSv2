@@ -4,6 +4,8 @@
 "Recent" = "Recentes";
 "teste" = "teste";
 "error" = "Error";
+"emptyStateExpenseTitle" = "Não encontrado";
+"emptyStateExpenseDescription" = "Não existe nenhum despesa para essa conta.";
 "errorUserPasswordInvalid" = "Usuário ou senha inválidos";
 "errorInternetDescription" = "Não foi possível carregar a página no momento";
 "errorUnexpectedDescription" = "Não foi possivel carregar a página no momento. Por favor, tente mais tarde.";

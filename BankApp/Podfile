@@ -21,7 +21,6 @@ target 'BankApp' do
 
   target 'BankAppUITests' do
     pod 'KIF'
-    pod 'KIF/IdentifierTests'
   end
 
 end

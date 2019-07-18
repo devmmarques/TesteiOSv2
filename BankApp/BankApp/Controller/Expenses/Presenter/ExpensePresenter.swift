@@ -10,22 +10,22 @@ import Foundation
 
 final class ExpensePresenter {
     
-    private let viewProtocol: ExpenseProtocol
-    private let service: ExpenseService
+    weak var viewProtocol: ExpenseProtocol?
+    private var service: ExpenseServiceProtocol
     
     private var allExpenses: [ExpenseListCellType<Expense>] = [] {
         didSet {
-            self.viewProtocol.show()
+            self.viewProtocol?.show()
         }
     }
     
-    init(viewProtocol: ExpenseProtocol, serviceAPI: ExpenseService) {
-        self.viewProtocol = viewProtocol
-        self.service = serviceAPI
+    init(service: ExpenseServiceProtocol = ExpenseService()) {
+        self.service = service
     }
     
-    func fetchExpenses() {
-        self.service.fetchExpenses(idExpense: 1) { [weak self] result in
+    func fetchExpenses(idExpense: Int) {
+        allExpenses = [.loading]
+        self.service.fetchExpenses(idExpense: idExpense) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case let .success(expense):

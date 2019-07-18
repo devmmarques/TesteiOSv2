@@ -7,7 +7,30 @@
 		<key>BankApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>12</integer>
+		</dict>
+		<key>BankAppUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B2033D0222DCB0BB00B79379</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2033D1622DCB0BD00B79379</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B236696922E00114002122A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

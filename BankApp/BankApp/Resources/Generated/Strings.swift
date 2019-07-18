@@ -15,6 +15,10 @@ internal enum L10n {
   internal static let account = L10n.tr("Localizable", "account")
   /// Saldo
   internal static let balance = L10n.tr("Localizable", "Balance")
+  /// Não existe nenhum despesa para essa conta.
+  internal static let emptyStateExpenseDescription = L10n.tr("Localizable", "emptyStateExpenseDescription")
+  /// Não encontrado
+  internal static let emptyStateExpenseTitle = L10n.tr("Localizable", "emptyStateExpenseTitle")
   /// Error
   internal static let error = L10n.tr("Localizable", "error")
   /// Não foi possível carregar a página no momento

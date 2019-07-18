@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol ExpenseServiceProtol  {
+protocol ExpenseServiceProtocol  {
     typealias ExpenseResult = Result<StatementList, WebserviceError>
     func fetchExpenses(idExpense: Int, completion: @escaping (ExpenseResult) -> Void)
 }
 
-final  class ExpenseService: NSObject, ExpenseServiceProtol {
+struct ExpenseService: ExpenseServiceProtocol {
     
     let service: Webservice
     

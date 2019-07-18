@@ -24,7 +24,7 @@ final class ExpenseCoordinator: Coordinator {
     }
 
     override func start() {
-        let controller = ListExpensesViewController(userAccount: userAccount)
+        let controller = ListExpensesViewController(userAccount: userAccount!)
         router.setRoot(controller, animated: true)
     }
 }
