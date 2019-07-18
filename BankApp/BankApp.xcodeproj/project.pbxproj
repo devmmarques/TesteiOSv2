@@ -57,6 +57,8 @@
 		B236696D22E00114002122A0 /* BankAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B236696C22E00114002122A0 /* BankAppUITests.swift */; };
 		B236697622E001B1002122A0 /* customerExpenses.json in Resources */ = {isa = PBXBuildFile; fileRef = B236697522E001B1002122A0 /* customerExpenses.json */; };
 		B236697822E001C2002122A0 /* ExpenseWebserviceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B236697722E001C2002122A0 /* ExpenseWebserviceSpec.swift */; };
+		B236697C22E005F3002122A0 /* XCTestCase+Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B236697B22E005F3002122A0 /* XCTestCase+Tester.swift */; };
+		B236697E22E0067F002122A0 /* MockExpenseWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B236697D22E0067F002122A0 /* MockExpenseWebservice.swift */; };
 		B276F6D722DE09AD003AF2CE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6D622DE09AD003AF2CE /* UIView+Extensions.swift */; };
 		B276F6DC22DE163B003AF2CE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6DB22DE163B003AF2CE /* String+Extensions.swift */; };
 		B276F6DE22DE1869003AF2CE /* Region+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276F6DD22DE1869003AF2CE /* Region+Extensions.swift */; };
@@ -175,6 +177,9 @@
 		B236696E22E00114002122A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B236697522E001B1002122A0 /* customerExpenses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = customerExpenses.json; sourceTree = "<group>"; };
 		B236697722E001C2002122A0 /* ExpenseWebserviceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseWebserviceSpec.swift; sourceTree = "<group>"; };
+		B236697A22E00572002122A0 /* BankAppUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BankAppUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B236697B22E005F3002122A0 /* XCTestCase+Tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Tester.swift"; sourceTree = "<group>"; };
+		B236697D22E0067F002122A0 /* MockExpenseWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExpenseWebservice.swift; sourceTree = "<group>"; };
 		B276F6D622DE09AD003AF2CE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		B276F6DB22DE163B003AF2CE /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B276F6DD22DE1869003AF2CE /* Region+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Region+Extensions.swift"; sourceTree = "<group>"; };
@@ -584,8 +589,11 @@
 		B236696B22E00114002122A0 /* BankAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B236697922E0054A002122A0 /* TestExtensions */,
 				B236696C22E00114002122A0 /* BankAppUITests.swift */,
 				B236696E22E00114002122A0 /* Info.plist */,
+				B236697A22E00572002122A0 /* BankAppUITests-Bridging-Header.h */,
+				B236697D22E0067F002122A0 /* MockExpenseWebservice.swift */,
 			);
 			path = BankAppUITests;
 			sourceTree = "<group>";
@@ -597,6 +605,14 @@
 				B236697722E001C2002122A0 /* ExpenseWebserviceSpec.swift */,
 			);
 			path = Expense;
+			sourceTree = "<group>";
+		};
+		B236697922E0054A002122A0 /* TestExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				B236697B22E005F3002122A0 /* XCTestCase+Tester.swift */,
+			);
+			path = TestExtensions;
 			sourceTree = "<group>";
 		};
 		B278394F22DE6867005423EF /* Coordinator */ = {
@@ -1072,6 +1088,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B236696D22E00114002122A0 /* BankAppUITests.swift in Sources */,
+				B236697E22E0067F002122A0 /* MockExpenseWebservice.swift in Sources */,
+				B236697C22E005F3002122A0 /* XCTestCase+Tester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1309,6 +1327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mmarques.BankAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BankAppUITests/BankAppUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BankApp;
@@ -1328,6 +1347,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mmarques.BankAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BankAppUITests/BankAppUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BankApp;

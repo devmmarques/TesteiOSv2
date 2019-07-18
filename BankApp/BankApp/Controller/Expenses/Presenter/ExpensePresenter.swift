@@ -11,7 +11,7 @@ import Foundation
 final class ExpensePresenter {
     
     weak var viewProtocol: ExpenseProtocol?
-    private var service: ExpenseServiceProtol
+    private var service: ExpenseServiceProtocol
     
     private var allExpenses: [ExpenseListCellType<Expense>] = [] {
         didSet {
@@ -19,7 +19,7 @@ final class ExpensePresenter {
         }
     }
     
-    init(service: ExpenseServiceProtol = ExpenseService()) {
+    init(service: ExpenseServiceProtocol = ExpenseService()) {
         self.service = service
     }
     

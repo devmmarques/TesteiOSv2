@@ -20,7 +20,7 @@ target 'BankApp' do
   end
 
   target 'BankAppUITests' do
-
+    pod 'KIF'
   end
 
 end
