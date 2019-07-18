@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'BankApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for BankApp
+
+  pod 'SwiftGen'
+  pod 'SwiftDate', '~> 5.0'
+  pod 'Alamofire'
+  pod 'KeychainSwift', '~> 16.0'
+  pod 'lottie-ios'
+
+  target 'BankAppTests' do
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'OHHTTPStubs/Swift'
+  end
+
+  target 'BankAppUITests' do
+    pod 'KIF'
+    pod 'KIF/IdentifierTests'
+  end
+
+end
