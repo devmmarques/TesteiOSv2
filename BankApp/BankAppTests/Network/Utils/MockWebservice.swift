@@ -15,6 +15,7 @@ enum MockWebserviceType {
     case unexpectedError
     case customerLogin
     case loginError
+    case expense
 }
 
 final class MockWebservice: Webservice {
@@ -54,6 +55,8 @@ extension MockWebservice {
             path = Bundle(for: MockWebservice.self).path(forResource: "loginResponse", ofType: "json")!
         case .loginError:
             fatalError("Unexpected error should return any data")
+        case .expense:
+            path = Bundle(for: MockWebservice.self).path(forResource: "customerExpenses", ofType: "json")!
         }
         let fileURL = URL(fileURLWithPath: path)
         return try! Data(contentsOf: fileURL)
